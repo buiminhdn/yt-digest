@@ -17,6 +17,7 @@ from zoneinfo import ZoneInfo
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.stdout.reconfigure(encoding="utf-8")  # console Windows mặc định cp1252, không in được emoji/tiếng Việt
 
 import notify  # noqa: E402
 import webpage  # noqa: E402

@@ -10,11 +10,11 @@ from pydantic import BaseModel, Field
 class Section(BaseModel):
     heading: str = Field(description="Tên phần nội dung, ngắn gọn")
     timestamp: str = Field(description="Thời điểm phần này bắt đầu, dạng mm:ss hoặc h:mm:ss; rỗng nếu không rõ")
-    points: list[str] = Field(description="Các ý kiến thức của phần này, viết trực tiếp, đầy đủ chi tiết")
+    points: list[str] = Field(description="1-3 ý kiến thức then chốt, mỗi ý một câu ngắn có số liệu")
 
 
 class VideoSummary(BaseModel):
-    core: str = Field(description="2-4 câu: kiến thức/kết luận cốt lõi, viết thẳng nội dung")
+    core: str = Field(description="1-2 câu: kết luận cốt lõi, viết thẳng nội dung")
     sections: list[Section]
     takeaways: list[str]
     topics: list[str]
@@ -33,43 +33,47 @@ class Digest(BaseModel):
 
 # ---------------- Prompt (sửa ở đây nếu muốn đổi phong cách) ----------------
 
-VIDEO_PROMPT = """Nhiệm vụ: chuyển toàn bộ NỘI DUNG KIẾN THỨC của video YouTube này thành ghi chú,
-để người đọc nắm được hết kiến thức mà KHÔNG cần xem video.
+VIDEO_PROMPT = """Nhiệm vụ: rút KIẾN THỨC CỐT LÕI của video YouTube này thành ghi chú NGẮN,
+đọc trong 1-2 phút mà nắm được điều đáng giá nhất, không cần xem video.
 (Kênh: {channel} | Tiêu đề: {title})
 
 Trả về JSON:
-- core: 2-4 câu nêu thẳng kiến thức/kết luận cốt lõi của video.
-- sections: đi theo cấu trúc của video, mỗi phần nội dung chính là một section:
-    - heading: tên phần
-    - timestamp: thời điểm phần đó bắt đầu
-    - points: các ý kiến thức của phần đó. Mỗi ý là một câu hoàn chỉnh, có đủ chi tiết.
-- takeaways: những việc cụ thể có thể áp dụng ngay (mảng rỗng nếu video không có).
+- core: 1-2 câu nêu thẳng kết luận quan trọng nhất.
+- sections: TỐI ĐA 5 phần, theo các phần lớn của video (gộp các mục nhỏ liền nhau thành một phần):
+    - heading: tên phần, dưới 8 chữ
+    - timestamp: thời điểm phần đó bắt đầu (phần gộp thì lấy lúc mục đầu tiên được gộp bắt đầu)
+    - points: 1-3 ý, mỗi ý MỘT câu dưới 30 chữ.
+- takeaways: tối đa 3 việc cụ thể làm được ngay, KHÔNG lặp lại ý đã có trong sections
+  (mảng rỗng nếu không có việc nào mới).
 - topics: 1-3 nhãn chủ đề ngắn.
 
 QUY TẮC BẮT BUỘC:
-1. Viết TRỰC TIẾP kiến thức, như ghi chú của người học, không phải lời giới thiệu video.
+1. Viết TRỰC TIẾP kiến thức, không phải lời giới thiệu video.
    SAI: "Video giới thiệu 3 cách tăng tốc app", "Tác giả chia sẻ về...", "Trong video, anh ấy nói..."
-   ĐÚNG: "Có 3 cách tăng tốc app: (1) lazy-load ảnh, giảm 40% thời gian tải; (2) ...; (3) ..."
-2. Giữ nguyên mọi chi tiết cụ thể: số liệu, tên công cụ/sản phẩm/người, câu lệnh, công thức,
-   các bước làm theo thứ tự, ví dụ minh họa, lý do và lập luận đằng sau mỗi kết luận.
-3. Bao phủ TOÀN BỘ nội dung có giá trị, không chỉ vài ý đầu. Độ dài tỉ lệ với video:
-   khoảng 150-300 từ cho video 5-10 phút, 400-800 từ cho 20-30 phút, 800-1500 từ cho video trên 1 giờ.
-4. Bỏ qua quảng cáo, nhà tài trợ, lời chào, kêu gọi like/subscribe, đoạn nói lan man.
-5. Chỉ dùng nội dung có trong video, không bịa thêm.
-6. Viết bằng {language}; giữ nguyên thuật ngữ kỹ thuật tiếng Anh khi cần."""
+   ĐÚNG: "3 cách tăng tốc app: lazy-load ảnh (-40% thời gian tải), cache API, nén bundle."
+2. Chỉ giữ thứ người đọc dùng được: con số then chốt, công thức, tên công cụ, bước làm.
+   BỎ: ví dụ minh họa, kể chuyện, diễn giải lý do dài dòng, ý lặp lại, ý hiển nhiên.
+3. Video kiểu danh sách (20 thói quen, 10 mẹo...): KHÔNG liệt kê từng mục. Gộp thành vài nhóm
+   và chỉ nêu các mục có giá trị nhất kèm con số.
+4. Tổng độ dài TOÀN BỘ ghi chú (tính cả core, takeaways), đếm theo âm tiết:
+   dưới 15 phút video: tối đa 150 chữ; 15-45 phút: tối đa 300 chữ; trên 45 phút: tối đa 400 chữ.
+5. Bỏ quảng cáo, nhà tài trợ, lời chào, kêu gọi like/subscribe.
+6. Chỉ dùng nội dung có trong video, không bịa thêm.
+7. Viết bằng {language}, câu cụt kiểu ghi chú; giữ thuật ngữ tiếng Anh khi cần."""
 
 DIGEST_PROMPT = """Dưới đây là ghi chú kiến thức từ các video YouTube mới trong ngày.
-Hãy tổng hợp thành bản kiến thức đọc trong vài phút, trả về JSON:
+Hãy tổng hợp thành bản đọc trong 2 phút, trả về JSON:
 
-- highlights: 3-6 kiến thức quan trọng/mới nhất hôm nay, mỗi ý 1-2 câu, nêu thẳng nội dung.
-- themes: 2-6 nhóm chủ đề. Mỗi nhóm có:
-    - title: tên chủ đề
-    - points: 3-10 ý kiến thức tổng hợp của nhóm. Gộp các ý trùng nhau giữa các kênh thành một;
-      khi các kênh có quan điểm hoặc số liệu khác nhau thì nêu rõ cả hai.
+- highlights: 3-5 kiến thức quan trọng nhất hôm nay, mỗi ý MỘT câu dưới 30 chữ.
+- themes: 1-4 nhóm chủ đề. Mỗi nhóm có:
+    - title: tên chủ đề, ngắn
+    - points: 2-4 ý, mỗi ý một câu dưới 30 chữ. KHÔNG lặp lại ý đã có trong highlights.
+      Gộp ý trùng giữa các kênh; kênh nói khác nhau thì nêu cả hai.
     - video_ids: các video_id thuộc nhóm (mỗi video thuộc đúng 1 nhóm)
 
 QUY TẮC: viết trực tiếp kiến thức, không viết kiểu "kênh X giới thiệu...", "video này nói về...".
-Giữ số liệu, tên công cụ, bước làm cụ thể. Chỉ dùng thông tin trong dữ liệu. Viết bằng {language}.
+Chỉ giữ con số then chốt và việc làm được; bỏ ví dụ, diễn giải. Chỉ dùng thông tin trong dữ liệu.
+Viết bằng {language}.
 
 DỮ LIỆU:
 {data}"""

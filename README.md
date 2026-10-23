@@ -6,9 +6,9 @@ Bạn chỉ cần làm một việc: **dán link kênh vào `channels.txt`**. M�
 
 ```
 05:30 mỗi sáng (GitHub Actions, miễn phí)
-  → đọc RSS của từng kênh, tìm video mới (bỏ qua Shorts và video đã tóm)
-  → Gemini "xem" từng video và chép lại toàn bộ kiến thức thành ghi chú theo từng phần
-    (số liệu, công cụ, các bước, ví dụ, lập luận), kèm timestamp, để bạn không cần xem video
+  → đọc RSS của từng kênh (RSS lỗi thì đọc trang /videos), tìm video mới (bỏ qua Shorts và video đã tóm)
+  → Gemini "xem" từng video và rút kiến thức cốt lõi thành ghi chú ngắn (1-2 phút đọc/video)
+    (con số then chốt, công thức, công cụ, các bước), kèm timestamp, để bạn không cần xem video
   → tổng hợp kiến thức trong ngày theo chủ đề (gộp ý trùng giữa các kênh)
   → dựng trang web + gửi Telegram
 ```

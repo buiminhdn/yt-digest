@@ -2,12 +2,16 @@
 
 ## Mục tiêu
 Tự động hóa 100% việc nắm kiến thức từ các kênh YouTube Minh theo dõi. Minh chỉ dán link kênh
-vào `channels.txt`; mỗi sáng hệ thống tự tìm video mới, chép lại **toàn bộ kiến thức** thành ghi chú,
+vào `channels.txt`; mỗi sáng hệ thống tự tìm video mới, rút **kiến thức cốt lõi** thành ghi chú ngắn,
 tổng hợp theo chủ đề, gửi Telegram và dựng trang web. Mục tiêu đọc 10–30 phút/ngày thay vì xem video.
 
 **Yêu cầu cốt lõi (Minh đã nhấn mạnh):** đầu ra là *kiến thức của video* (viết thẳng nội dung,
-giữ số liệu/công cụ/các bước/ví dụ/lập luận), KHÔNG phải giới thiệu video ("video này nói về…")
+giữ con số then chốt/công thức/công cụ/các bước), KHÔNG phải giới thiệu video ("video này nói về…")
 và KHÔNG phải gợi ý video nên xem. Đừng thêm lại điểm "đáng xem" hay mục "nên xem".
+
+**Ngắn, không lan man (Minh chốt 23/10/2026):** bản "chép toàn bộ" ra ~45 chữ/phút video (3 video = 34 phút đọc),
+Minh thấy quá dài. Prompt hiện đặt trần 150/300/400 chữ mỗi video (<15 / 15–45 / >45 phút), tối đa 5 phần,
+video dạng danh sách thì gộp nhóm, bỏ ví dụ/kể chuyện. Gemini thường vượt trần 10–40%. Đừng nới lại.
 
 ## Kiến trúc
 ```
@@ -15,6 +19,8 @@ GitHub Actions cron 22:30 UTC (05:30 giờ VN)
   digest/main.py
     youtube.py   : link kênh → channel ID (cache state/channels.json) → RSS
                    (youtube.com/feeds/videos.xml?channel_id=...) → lọc Shorts (HEAD /shorts/<id>: 200 = Short)
+                   RSS trả 404 thất thường (đo 10/2026: phần lớn request) → thử 3 lần rồi đọc trang
+                   /channel/<id>/videos (ytInitialData, lockupViewModel; ngày đăng suy từ "Nd ago", gần đúng)
     summarize.py : Gemini API, truyền thẳng URL YouTube làm file_data (không cần transcript,
                    không bị chặn IP cloud). fps=0.2 + MEDIA_RESOLUTION_LOW để tiết kiệm token.
                    Đầu ra JSON có schema (pydantic): VideoSummary, Digest. Model fallback theo config.
@@ -56,14 +62,13 @@ Secrets cần trên GitHub: `GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CH
 - Trang web và Telegram viết tiếng Việt; prompt cấm câu kiểu "video giới thiệu…".
 
 ## Trạng thái (23/10/2026)
-- Code hoàn chỉnh; đã test với dữ liệu giả lập (parse RSS, chống trùng, render web mobile/dark, chia tin Telegram,
-  dựng request Gemini và fallback model bằng stub).
-- **Chưa chạy thật** với Gemini và YouTube (môi trường dựng code không truy cập được). Lần chạy thật đầu tiên
-  cần kiểm tra: tên model trong `config.yaml` còn hợp lệ, `video_metadata.fps` + `media_resolution` được chấp nhận
-  với URL YouTube, resolve channel ID từ HTML kênh, nhận diện Shorts.
-- Chưa có: repo GitHub, secrets, bot Telegram, danh sách kênh thật.
+- **Đã chạy thật local (Windows) với Gemini + YouTube**: resolve channel ID, RSS/fallback, nhận diện Shorts,
+  `fps` + `media_resolution` với URL YouTube đều chạy. Timestamp khớp mục lục chương của tác giả (±1 giây).
+- ID video có thể bắt đầu bằng `_` → `load_day` chỉ loại đúng `_digest.json`/`_failed.json`.
+- Kênh mẫu: @AnhBaTaiChinh-88. Chạy local: `$env:GEMINI_API_KEY="..."; python digest/main.py --no-telegram`.
+- Chưa có: bot Telegram, repo GitHub, secrets. Minh muốn hoàn thiện local trước rồi mới push.
 
 ## Việc tiếp theo gợi ý
-1. Thêm vài kênh vào `channels.txt`, chạy local với key thật, xem chất lượng ghi chú và chỉnh `VIDEO_PROMPT`.
+1. Tạo bot Telegram, chạy thử gửi tin từ local.
 2. Tạo repo GitHub, push, thêm secrets, bật Pages (Source: GitHub Actions), Run workflow.
 3. Sau đó: tìm kiếm lại kiến thức cũ trên trang web; hỏi đáp trên kho ghi chú; thêm kênh qua lệnh Telegram bot.

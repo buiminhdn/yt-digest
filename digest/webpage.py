@@ -156,7 +156,7 @@ def render_day(date: str, digest: dict, records: list[dict], failed: list[dict],
 
 def load_day(day_dir: Path):
     records = [json.loads(p.read_text("utf-8")) for p in sorted(day_dir.glob("*.json"))
-               if not p.name.startswith("_")]
+               if p.name not in ("_digest.json", "_failed.json")]  # ID video cũng có thể bắt đầu bằng "_"
     digest_p, failed_p = day_dir / "_digest.json", day_dir / "_failed.json"
     digest = json.loads(digest_p.read_text("utf-8")) if digest_p.exists() else {"highlights": [], "themes": []}
     failed = json.loads(failed_p.read_text("utf-8")) if failed_p.exists() else []

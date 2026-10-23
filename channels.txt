@@ -1,0 +1,10 @@
+# Dán link các kênh YouTube bạn muốn theo dõi, mỗi dòng một link.
+# Dòng bắt đầu bằng # sẽ bị bỏ qua.
+# Chấp nhận mọi dạng link:
+#   https://www.youtube.com/@tenkenh
+#   https://www.youtube.com/channel/UCxxxxxxxxxxxxxxxxxxxxxx
+#   https://www.youtube.com/c/tenkenh
+#   @tenkenh
+# Ví dụ (xóa dấu # ở đầu để bật):
+# https://www.youtube.com/@GoogleDevelopers
+

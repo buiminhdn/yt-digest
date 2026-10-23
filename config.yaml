@@ -1,0 +1,39 @@
+# ===== Cấu hình YT Digest =====
+
+# Ngôn ngữ của bản tóm tắt
+language: "Tiếng Việt"
+
+# Model Gemini, thử lần lượt từ trên xuống nếu model trước không tồn tại.
+# Xem danh sách model mới nhất: https://ai.google.dev/gemini-api/docs/models
+models:
+  - gemini-3.8-flash
+  - gemini-flash-latest
+
+# Lần chạy đầu tiên chỉ lấy video đăng trong N ngày gần nhất (tránh tóm cả đống video cũ)
+lookback_days: 2
+
+# Tối đa bao nhiêu video mỗi lần chạy (phần dư để lần sau)
+max_videos_per_run: 25
+
+# Bỏ qua YouTube Shorts
+skip_shorts: true
+
+# Tiết kiệm token: lấy mẫu khung hình thưa (video nói chuyện không cần nhiều hình)
+# và độ phân giải thấp. Tăng video_fps nếu bạn theo dõi kênh nặng về demo/màn hình.
+video_fps: 0.2
+low_resolution: true
+
+# Nghỉ giữa 2 video (giây), tránh chạm giới hạn tốc độ của gói free
+delay_between_videos_sec: 6
+
+# Một video lỗi sẽ được thử lại ở các lần chạy sau, tối đa N lần
+max_attempts: 3
+
+# Múi giờ để đặt tên bản digest theo ngày
+timezone: "Asia/Ho_Chi_Minh"
+
+# Telegram: "full" = gửi toàn bộ digest, "short" = chỉ điểm nhấn + link trang web
+telegram_detail: full
+
+# Để trống thì tự suy ra https://<user>.github.io/<repo>/
+site_url: ""

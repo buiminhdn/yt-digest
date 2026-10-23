@@ -169,7 +169,7 @@ class GeminiSummarizer:
 
 
 class FakeSummarizer:
-    """Dùng để chạy thử toàn bộ luồng (trang web, Telegram) mà không cần Gemini."""
+    """Dùng để chạy thử toàn bộ luồng (Telegram) mà không cần Gemini."""
 
     def __init__(self, cfg: dict):
         self.cfg = cfg

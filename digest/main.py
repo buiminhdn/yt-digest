@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""YT Digest: tự tìm video mới từ các kênh bạn theo dõi, tóm tắt, gom thành digest,
-dựng trang web và gửi về Telegram.
+"""YT Digest: tự tìm video mới từ các kênh bạn theo dõi, tóm tắt, gom thành digest
+và gửi về Telegram.
 
 Chạy:  python digest/main.py           (cần GEMINI_API_KEY)
        python digest/main.py --fake    (chạy thử với tóm tắt giả lập, không cần key)
@@ -20,14 +20,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.stdout.reconfigure(encoding="utf-8")  # console Windows mặc định cp1252, không in được emoji/tiếng Việt
 
 import notify  # noqa: E402
-import webpage  # noqa: E402
 import youtube  # noqa: E402
 from summarize import FakeSummarizer, GeminiSummarizer, QuotaExhausted  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_DIR = ROOT / "state"
 SUMMARIES_DIR = ROOT / "summaries"
-SITE_DIR = ROOT / "docs"
 
 
 def log(msg: str) -> None:
@@ -48,16 +46,11 @@ def read_channels() -> list[str]:
     return [l.strip() for l in lines if l.strip() and not l.strip().startswith("#")]
 
 
-def site_url(cfg: dict) -> str:
-    if cfg.get("site_url"):
-        return cfg["site_url"].rstrip("/") + "/"
-    repo = os.environ.get("GITHUB_REPOSITORY", "")
-    if "/" in repo:
-        owner, name = repo.split("/", 1)
-        if name.lower() == f"{owner.lower()}.github.io":
-            return f"https://{name}/"
-        return f"https://{owner}.github.io/{name}/"
-    return ""
+def load_day(day_dir: Path):
+    records = [json.loads(p.read_text("utf-8")) for p in sorted(day_dir.glob("*.json"))
+               if p.name not in ("_digest.json", "_failed.json")]  # ID video cũng có thể bắt đầu bằng "_"
+    return records, load_json(day_dir / "_digest.json", {"highlights": [], "themes": []}), \
+        load_json(day_dir / "_failed.json", [])
 
 
 def collect_candidates(cfg, processed, cache, now) -> list[dict]:
@@ -147,7 +140,7 @@ def main() -> int:
         if not args.fake:
             time.sleep(cfg.get("delay_between_videos_sec", 6))
 
-    records, digest, failed = webpage.load_day(day_dir) if day_dir.exists() else ([], {}, [])
+    records, digest, failed = load_day(day_dir)
     if records and (new_count or not (day_dir / "_digest.json").exists()):
         log("🧭 Tổng hợp digest theo chủ đề...")
         if len(records) == 1:
@@ -168,14 +161,9 @@ def main() -> int:
     processed = {k: v for k, v in processed.items() if v.get("date", today) >= cutoff}
     save_json(STATE_DIR / "processed.json", processed)
 
-    webpage.build_site(SUMMARIES_DIR, SITE_DIR, tz)
-    log("🌐 Đã dựng trang web trong docs/")
-
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if new_count and token and chat and not args.no_telegram:
-        url = site_url(cfg)
-        msgs = notify.build_messages(today, digest, records, failed, url + f"{today}.html" if url else "",
-                                     cfg.get("telegram_detail", "full"))
+        msgs = notify.build_messages(today, digest, records, failed, cfg.get("telegram_detail", "full"))
         notify.send(token, chat, msgs)
         log(f"📨 Đã gửi {len(msgs)} tin Telegram")
     elif not new_count:

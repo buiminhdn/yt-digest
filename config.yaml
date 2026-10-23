@@ -32,8 +32,5 @@ max_attempts: 3
 # Múi giờ để đặt tên bản digest theo ngày
 timezone: "Asia/Ho_Chi_Minh"
 
-# Telegram: "full" = gửi toàn bộ digest, "short" = chỉ điểm nhấn + link trang web
+# Telegram: "full" = gửi toàn bộ digest, "short" = chỉ điểm nhấn + danh sách link video
 telegram_detail: full
-
-# Để trống thì tự suy ra https://<user>.github.io/<repo>/
-site_url: ""

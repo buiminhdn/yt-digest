@@ -1,13 +1,18 @@
 """Gửi digest về Telegram."""
+import datetime as dt
 import html
 import re
 import time
 
 import requests
 
-from webpage import vn_date
-
 LIMIT = 3900  # Telegram giới hạn 4096 ký tự/tin
+WEEKDAYS = ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật"]
+
+
+def vn_date(iso_date: str) -> str:
+    d = dt.date.fromisoformat(iso_date)
+    return f"{WEEKDAYS[d.weekday()]}, {d.day:02d}/{d.month:02d}/{d.year}"
 
 
 def _e(s) -> str:
@@ -33,7 +38,7 @@ def _chunks(blocks: list[str]) -> list[str]:
 
 
 def build_messages(date: str, digest: dict, records: list[dict], failed: list[dict],
-                   page_url: str, detail: str = "full") -> list[str]:
+                   detail: str = "full") -> list[str]:
     records = sorted(records, key=lambda r: (r["channel"], r.get("published", "")))
     by_id = {r["video_id"]: r for r in records}
     channels = len({r["channel"] for r in records})
@@ -57,12 +62,13 @@ def build_messages(date: str, digest: dict, records: list[dict], failed: list[di
                 parts.append(f"▸ <u>{_e(sec['heading'])}</u>{ts}\n" +
                              "\n".join(f"• {_e(p)}" for p in sec.get("points", [])))
             blocks.append("\n\n".join(parts))
+    else:
+        blocks.append("📺 <b>VIDEO</b>\n" + "\n".join(
+            f'• <a href="{_e(r["url"])}">{_e(r["title"])}</a> · {_e(r["channel"])}' for r in records))
 
     if failed:
         blocks.append("⚠️ <b>Không tóm tắt được</b>\n" + "\n".join(
             f'• <a href="{_e(f["url"])}">{_e(f["title"])}</a>' for f in failed))
-    if page_url:
-        blocks.append(f'🔗 <a href="{_e(page_url)}">Đọc trên web</a>')
     return _chunks(blocks)
 
 

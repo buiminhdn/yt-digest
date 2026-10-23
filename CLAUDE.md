@@ -68,9 +68,11 @@ Secrets cần trên GitHub: `GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CH
   `fps` + `media_resolution` với URL YouTube đều chạy. Timestamp khớp mục lục chương của tác giả (±1 giây).
 - ID video có thể bắt đầu bằng `_` → `load_day` chỉ loại đúng `_digest.json`/`_failed.json`.
 - Kênh mẫu: @AnhBaTaiChinh-88. Chạy local: `$env:GEMINI_API_KEY="..."; python digest/main.py --no-telegram`.
-- Chưa có: bot Telegram, repo GitHub, secrets. Minh muốn hoàn thiện local trước rồi mới push.
+- **Đã lên GitHub**: repo public `buiminhdn/yt-digest`, đủ 3 secrets, Pages (Source: GitHub Actions) ở
+  https://buiminhdn.github.io/yt-digest/. Telegram gửi được (từ local). Workflow chạy tay đầu tiên thành công,
+  YouTube không chặn IP runner. Bot commit kết quả mỗi lượt → nhớ `git pull` trước khi sửa local.
 
 ## Việc tiếp theo gợi ý
-1. Tạo bot Telegram, chạy thử gửi tin từ local.
-2. Tạo repo GitHub, push, thêm secrets, bật Pages (Source: GitHub Actions), Run workflow.
+1. Theo dõi vài lượt cron 05:30 đầu tiên (Telegram có về không, RSS/fallback trên runner).
+2. Cân nhắc `telegram_detail: short` (điểm nhấn + link web) khi đã quen đọc trên web.
 3. Sau đó: tìm kiếm lại kiến thức cũ trên trang web; hỏi đáp trên kho ghi chú; thêm kênh qua lệnh Telegram bot.

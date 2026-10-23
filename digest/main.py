@@ -155,6 +155,9 @@ def main() -> int:
         else:
             try:
                 digest = summarizer.build_digest(records)
+                # Nhóm chỉ 1 video thì chỉ lặp lại ghi chú của video đó
+                ids = {r["video_id"] for r in records}
+                digest["themes"] = [t for t in digest["themes"] if len(ids & set(t["video_ids"])) >= 2]
             except Exception as e:
                 log(f"   ❗ không tổng hợp được ({e}); dùng danh sách video thay thế")
                 digest = {"highlights": [], "themes": []}

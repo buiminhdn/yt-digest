@@ -16,7 +16,6 @@ class Section(BaseModel):
 class VideoSummary(BaseModel):
     core: str = Field(description="1-2 câu: kết luận cốt lõi, viết thẳng nội dung")
     sections: list[Section]
-    takeaways: list[str]
     topics: list[str]
 
 
@@ -43,8 +42,6 @@ Trả về JSON:
     - heading: tên phần, dưới 8 chữ
     - timestamp: thời điểm phần đó bắt đầu (phần gộp thì lấy lúc mục đầu tiên được gộp bắt đầu)
     - points: 1-3 ý, mỗi ý MỘT câu dưới 30 chữ.
-- takeaways: tối đa 3 việc cụ thể làm được ngay, KHÔNG lặp lại ý đã có trong sections
-  (mảng rỗng nếu không có việc nào mới).
 - topics: 1-3 nhãn chủ đề ngắn.
 
 QUY TẮC BẮT BUỘC:
@@ -55,7 +52,7 @@ QUY TẮC BẮT BUỘC:
    BỎ: ví dụ minh họa, kể chuyện, diễn giải lý do dài dòng, ý lặp lại, ý hiển nhiên.
 3. Video kiểu danh sách (20 thói quen, 10 mẹo...): KHÔNG liệt kê từng mục. Gộp thành vài nhóm
    và chỉ nêu các mục có giá trị nhất kèm con số.
-4. Tổng độ dài TOÀN BỘ ghi chú (tính cả core, takeaways), đếm theo âm tiết:
+4. Tổng độ dài TOÀN BỘ ghi chú (tính cả core), đếm theo âm tiết:
    dưới 15 phút video: tối đa 150 chữ; 15-45 phút: tối đa 300 chữ; trên 45 phút: tối đa 400 chữ.
 5. Bỏ quảng cáo, nhà tài trợ, lời chào, kêu gọi like/subscribe.
 6. Chỉ dùng nội dung có trong video, không bịa thêm.
@@ -65,11 +62,12 @@ DIGEST_PROMPT = """Dưới đây là ghi chú kiến thức từ các video YouT
 Hãy tổng hợp thành bản đọc trong 2 phút, trả về JSON:
 
 - highlights: 3-5 kiến thức quan trọng nhất hôm nay, mỗi ý MỘT câu dưới 30 chữ.
-- themes: 1-4 nhóm chủ đề. Mỗi nhóm có:
+- themes: tối đa 4 nhóm chủ đề, CHỈ tạo nhóm khi có từ 2 video trở lên cùng chủ đề.
+  Video không chung chủ đề với video nào khác thì không xếp nhóm (themes có thể rỗng). Mỗi nhóm có:
     - title: tên chủ đề, ngắn
-    - points: 2-4 ý, mỗi ý một câu dưới 30 chữ. KHÔNG lặp lại ý đã có trong highlights.
-      Gộp ý trùng giữa các kênh; kênh nói khác nhau thì nêu cả hai.
-    - video_ids: các video_id thuộc nhóm (mỗi video thuộc đúng 1 nhóm)
+    - points: 2-4 ý gộp/đối chiếu giữa các video, mỗi ý một câu dưới 30 chữ.
+      KHÔNG lặp lại ý đã có trong highlights. Kênh nói khác nhau thì nêu cả hai.
+    - video_ids: các video_id thuộc nhóm (ít nhất 2)
 
 QUY TẮC: viết trực tiếp kiến thức, không viết kiểu "kênh X giới thiệu...", "video này nói về...".
 Chỉ giữ con số then chốt và việc làm được; bỏ ví dụ, diễn giải. Chỉ dùng thông tin trong dữ liệu.
@@ -188,7 +186,6 @@ class FakeSummarizer:
                 }
                 for i in range(3)
             ],
-            "takeaways": ["Việc cụ thể có thể làm ngay (giả lập)."],
             "topics": [["AI", "Lập trình", "Kinh doanh"][n % 3]],
         }
 

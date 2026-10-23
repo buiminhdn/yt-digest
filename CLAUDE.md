@@ -12,6 +12,8 @@ và KHÔNG phải gợi ý video nên xem. Đừng thêm lại điểm "đáng x
 **Ngắn, không lan man (Minh chốt 23/10/2026):** bản "chép toàn bộ" ra ~45 chữ/phút video (3 video = 34 phút đọc),
 Minh thấy quá dài. Prompt hiện đặt trần 150/300/400 chữ mỗi video (<15 / 15–45 / >45 phút), tối đa 5 phần,
 video dạng danh sách thì gộp nhóm, bỏ ví dụ/kể chuyện. Gemini thường vượt trần 10–40%. Đừng nới lại.
+Đã bỏ mục "Áp dụng ngay" (takeaways) vì Gemini luôn chép lại ý trong sections; "Tổng hợp theo chủ đề"
+chỉ giữ nhóm gom từ ≥2 video (lọc trong main.py), vì nhóm 1 video chỉ lặp lại ghi chú của video đó.
 
 ## Kiến trúc
 ```
@@ -41,7 +43,7 @@ GitHub Actions cron 22:30 UTC (05:30 giờ VN)
 | `.github/workflows/digest.yml` | Cron + commit + Pages |
 
 ## Khung dữ liệu (đổi thì phải sửa cả webpage.py, notify.py, FakeSummarizer)
-- VideoSummary: `core` (str), `sections[] {heading, timestamp, points[]}`, `takeaways[]`, `topics[]`
+- VideoSummary: `core` (str), `sections[] {heading, timestamp, points[]}`, `topics[]`
 - Digest: `highlights[]`, `themes[] {title, points[], video_ids[]}`
 
 ## Lệnh

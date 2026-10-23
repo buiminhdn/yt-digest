@@ -56,8 +56,6 @@ def build_messages(date: str, digest: dict, records: list[dict], failed: list[di
                 ts = f" ({_e(sec['timestamp'])})" if sec.get("timestamp") else ""
                 parts.append(f"▸ <u>{_e(sec['heading'])}</u>{ts}\n" +
                              "\n".join(f"• {_e(p)}" for p in sec.get("points", [])))
-            if r.get("takeaways"):
-                parts.append("✅ <u>Áp dụng ngay</u>\n" + "\n".join(f"• {_e(t)}" for t in r["takeaways"]))
             blocks.append("\n\n".join(parts))
 
     if failed:

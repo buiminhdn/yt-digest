@@ -42,8 +42,6 @@ h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted
 .video h4{margin:16px 0 4px;font-size:15px}
 .points{margin:0 0 8px;padding-left:20px}.points li{margin:4px 0}
 .ts{font-size:12px;font-variant-numeric:tabular-nums;color:var(--accent);text-decoration:none;margin-left:6px;font-weight:600}
-.take{background:var(--bg);border-radius:8px;padding:10px 14px;margin:10px 0;font-size:15px}
-.take b{font-size:13px;color:var(--muted)}.take ul{margin:4px 0 0;padding-left:18px}
 .chips{margin-top:2px}.chips span{display:inline-block;font-size:12px;background:var(--chip);border-radius:6px;padding:2px 8px;margin:2px 4px 0 0}
 .failed li{font-size:14px;color:var(--muted)}
 .archive{columns:2;font-size:14px;padding-left:18px}.archive a{text-decoration:none}
@@ -77,9 +75,6 @@ def _video_card(r: dict, tz) -> str:
         ts = f' <a class="ts" href="{_e(r["url"])}&t={t}s" target="_blank">{_e(sec["timestamp"])}</a>' if t is not None else ""
         pts = "".join(f"<li>{_e(p)}</li>" for p in sec.get("points", []))
         secs.append(f"<h4>{_e(sec['heading'])}{ts}</h4><ul class='points'>{pts}</ul>")
-    take = ""
-    if r.get("takeaways"):
-        take = '<div class="take"><b>ÁP DỤNG NGAY</b><ul>' + "".join(f"<li>{_e(t)}</li>" for t in r["takeaways"]) + "</ul></div>"
     chips = "".join(f"<span>{_e(t)}</span>" for t in r.get("topics", []))
     return f"""
 <article class="video" id="v-{_e(r['video_id'])}">
@@ -93,7 +88,6 @@ def _video_card(r: dict, tz) -> str:
   </div>
   <p class="core">{_e(r.get('core'))}</p>
   {''.join(secs)}
-  {take}
 </article>"""
 
 

@@ -1,0 +1,22 @@
+{
+  "highlights": [
+    "Thức khuya đến 01:00 ức chế melatonin, khiến não bộ hôm sau hoạt động dưới 20% công suất suốt 17 tiếng.",
+    "Khung giờ 04:30 - 06:30 giúp tăng hiệu suất xử lý gấp 3-4 lần và tạo thêm 730 giờ tập trung sâu mỗi năm.",
+    "Đánh giá AI bằng 10 tác vụ thực tế theo 3 mức điểm thay vì tin vào điểm benchmark lý thuyết.",
+    "Chạy AI offline bằng LM Studio và Open WebUI giúp bảo mật dữ liệu nội bộ tuyệt đối mà không mất phí thuê bao."
+  ],
+  "themes": [
+    {
+      "title": "Phương pháp lựa chọn và vận hành AI",
+      "points": [
+        "Bản Claude miễn phí đạt 9/10 điểm tác vụ thực tế, vượt trội hơn Gemini đạt 6,5 và ChatGPT đạt 6 điểm.",
+        "Mô hình mã nguồn mở Qwen 27B chạy offline chiếm hơn 24GB VRAM để đạt tốc độ xuất 40 token mỗi giây.",
+        "Trang bị card 32GB VRAM cho phép phục vụ mạng cục bộ cùng lúc 4 người dùng với độ trễ khoảng 5 giây."
+      ],
+      "video_ids": [
+        "9n9nLSNN0WM",
+        "nT18oTSaRR8"
+      ]
+    }
+  ]
+}

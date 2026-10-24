@@ -1,0 +1,41 @@
+{
+  "video_id": "9n9nLSNN0WM",
+  "title": "Stop Believing the AI Hype: How to Test ChatGPT, Claude, and Gemini with Your Own Daily Tasks",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-10-23T04:55:15.951038+00:00",
+  "url": "https://www.youtube.com/watch?v=9n9nLSNN0WM",
+  "thumbnail": "https://i.ytimg.com/vi/9n9nLSNN0WM/mqdefault.jpg",
+  "core": "Đừng tin điểm benchmark lý thuyết; hãy tự lập bộ đề 10 tác vụ thực tế có tiêu chuẩn rõ ràng để tự chấm điểm và chọn AI phù hợp.",
+  "sections": [
+    {
+      "heading": "Quy tắc lập bộ đề đánh giá",
+      "timestamp": "01:55",
+      "points": [
+        "Chọn 10 việc thực tế đã làm trong tuần và xác định rõ tiêu chí hoàn thành trước khi thử nghiệm.",
+        "Áp dụng thang điểm: 1 điểm (dùng được ngay), 0,5 điểm (phải sửa lại), 0 điểm (hỏng hoàn toàn)."
+      ]
+    },
+    {
+      "heading": "Kết quả kiểm tra thực tế",
+      "timestamp": "00:35",
+      "points": [
+        "Kết quả chấm 10 tác vụ trên bản miễn phí: Claude đạt 9/10, Gemini 6,5/10 và ChatGPT 6/10 điểm.",
+        "Các AI thường thất bại ở yêu cầu giới hạn số từ và có xu hướng tự bịa thêm chi tiết sai."
+      ]
+    },
+    {
+      "heading": "Kiểm tra độ ổn định tác vụ",
+      "timestamp": "07:53",
+      "points": [
+        "Với tác vụ dùng hàng ngày, chạy thử 3 lần và lấy điểm của lần thấp nhất để đánh giá."
+      ]
+    }
+  ],
+  "topics": [
+    "Đánh giá AI",
+    "ChatGPT",
+    "Năng suất"
+  ],
+  "summarized_at": "2026-10-24T00:54:24.373768+00:00"
+}

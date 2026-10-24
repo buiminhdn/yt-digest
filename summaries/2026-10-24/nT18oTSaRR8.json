@@ -1,0 +1,42 @@
+{
+  "video_id": "nT18oTSaRR8",
+  "title": "Local AI for home and office, offline: set up your own AI station running directly on your computer.",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-10-22T00:55:15.951038+00:00",
+  "url": "https://www.youtube.com/watch?v=nT18oTSaRR8",
+  "thumbnail": "https://i.ytimg.com/vi/nT18oTSaRR8/mqdefault.jpg",
+  "core": "Chạy AI offline bằng LM Studio và Open WebUI giúp bảo mật dữ liệu tuyệt đối và không tốn phí thuê bao. VRAM đồ họa là yếu tố then chốt quyết định kích thước mô hình và số người dùng đồng thời.",
+  "sections": [
+    {
+      "heading": "Công cụ chạy AI offline",
+      "timestamp": "01:48",
+      "points": [
+        "LM Studio cho phép tải và chạy các mô hình mã nguồn mở trực tiếp trên máy.",
+        "Mô hình Qwen 3.8 27B chiếm hơn 24GB VRAM, đạt tốc độ xuất khoảng 40 token/giây."
+      ]
+    },
+    {
+      "heading": "Xử lý tài liệu và giọng nói",
+      "timestamp": "04:18",
+      "points": [
+        "Đọc và tóm tắt kho tài liệu nội bộ mà không cần gửi dữ liệu lên mạng.",
+        "Whisper chuyển đổi file ghi âm 11 phút thành văn bản chỉ trong 50 giây."
+      ]
+    },
+    {
+      "heading": "Triển khai dùng chung nội bộ",
+      "timestamp": "06:48",
+      "points": [
+        "Open WebUI biến máy trạm thành máy chủ chat cục bộ qua trình duyệt.",
+        "Một card 32GB VRAM phục vụ cùng lúc 4 người dùng với độ trễ khoảng 5 giây."
+      ]
+    }
+  ],
+  "topics": [
+    "Local AI",
+    "Phần cứng AI",
+    "Bảo mật dữ liệu"
+  ],
+  "summarized_at": "2026-10-24T00:54:24.373768+00:00"
+}

@@ -32,9 +32,15 @@
     "date": "2026-10-26"
   },
   "y4k7jGgYyv4": {
+    "attempts": 2,
+    "status": "failed",
+    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+    "date": "2026-10-28"
+  },
+  "j7ZrXo_bwBA": {
     "attempts": 1,
     "status": "failed",
-    "error": "Server disconnected without sending a response.",
-    "date": "2026-10-27"
+    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+    "date": "2026-10-28"
   }
 }

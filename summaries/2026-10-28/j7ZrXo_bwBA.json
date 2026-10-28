@@ -1,0 +1,48 @@
+{
+  "video_id": "j7ZrXo_bwBA",
+  "title": "Làm Video Minh Hoạ Mọi Thứ Với Claude (Motion Graphics)",
+  "channel": "Nhat Anh AI",
+  "channel_id": "UCA_COBb6hjOWBYGRUBHwy6g",
+  "published": "2026-10-27T14:03:46.082320+00:00",
+  "url": "https://www.youtube.com/watch?v=j7ZrXo_bwBA",
+  "thumbnail": "https://i.ytimg.com/vi/j7ZrXo_bwBA/mqdefault.jpg",
+  "core": "Sử dụng Claude Code kết hợp HyperFrames Motion Studio để tạo video motion graphics tự động bằng code từ text, giúp tiết kiệm thời gian chỉnh sửa cho các video YouTube, marketing, và báo cáo.",
+  "sections": [
+    {
+      "heading": "Làm video bằng code là gì",
+      "timestamp": "00:49",
+      "points": [
+        "So với AI tạo khung hình (Higgsfield, Flow) không sửa được chi tiết nhỏ, Claude Code cho phép chỉnh sửa từng chữ số, màu sắc của video tạo bằng code giống như làm trên Canva."
+      ]
+    },
+    {
+      "heading": "Ứng dụng thực tế",
+      "timestamp": "03:04",
+      "points": [
+        "Claude Code phù hợp tạo video YouTube, quảng cáo sản phẩm, video ra mắt, chăm sóc khách hàng và báo cáo số liệu."
+      ]
+    },
+    {
+      "heading": "Cách dùng Motion Studio",
+      "timestamp": "04:18",
+      "points": [
+        "Cần Claude Code (bản Pro trở lên) và skill Motion Studio (tải miễn phí từ tài liệu).",
+        "Quy trình 5 bước: Mô tả video, chọn/tạo phong cách, hỏi-đáp lập brief, Claude dựng video, xem và xuất bản."
+      ]
+    },
+    {
+      "heading": "Mẹo tối ưu và tham khảo",
+      "timestamp": "21:51",
+      "points": [
+        "Tham khảo phong cách video từ X (Twitter) hoặc MotionVideo, sau đó đưa link cho Claude Code học theo.",
+        "Kiểm tra trước video trên các nền tảng và dùng ảnh quay thật kết hợp minh họa để video sinh động hơn."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Code",
+    "Motion Graphics",
+    "AI Video"
+  ],
+  "summarized_at": "2026-10-28T03:03:20.398106+00:00"
+}

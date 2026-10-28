@@ -72,6 +72,12 @@ def build_messages(date: str, digest: dict, records: list[dict], failed: list[di
     return _chunks(blocks)
 
 
+def build_retry_notice(date: str, items: list[dict]) -> str:
+    lines = "\n".join(f'• <a href="{_e(i["url"])}">{_e(i["title"])}</a> <i>({_e(i["note"])})</i>' for i in items)
+    return (f"⚠️ <b>YT Digest · {_e(vn_date(date))}</b>\n"
+            f"Gemini lỗi, chưa tóm tắt được {len(items)} video. Lần chạy sau sẽ thử lại:\n{lines}")[:LIMIT]
+
+
 def send(token: str, chat_id: str, messages: list[str]) -> None:
     for m in messages:
         r = requests.post(

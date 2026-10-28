@@ -3,11 +3,14 @@
 # Ngôn ngữ của bản tóm tắt
 language: "Tiếng Việt"
 
-# Model Gemini, thử lần lượt từ trên xuống nếu model trước không tồn tại.
+# Model Gemini, thử lần lượt từ trên xuống khi model trước không tồn tại,
+# hết quota (429) hoặc quá tải (503). Quota gói free tính riêng từng model.
 # Xem danh sách model mới nhất: https://ai.google.dev/gemini-api/docs/models
 models:
   - gemini-3.8-flash
-  - gemini-flash-latest
+  - gemini-3.6-flash
+  - gemini-3.5-flash-lite
+  - gemini-3.1-flash-lite
 
 # Lần chạy đầu tiên chỉ lấy video đăng trong N ngày gần nhất (tránh tóm cả đống video cũ)
 lookback_days: 2

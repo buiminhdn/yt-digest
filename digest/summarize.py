@@ -92,9 +92,10 @@ class GeminiSummarizer:
         self.cfg = cfg
 
     def _call(self, contents, schema, extra: dict | None = None):
+        import httpx
         from google.genai import errors, types
 
-        last_err = None
+        last_err, n_missing, n_quota = None, 0, 0
         for model in list(self.cfg["models"]):
             for attempt in range(3):
                 try:
@@ -111,22 +112,28 @@ class GeminiSummarizer:
                     # Nhớ model chạy được để lần gọi sau thử nó trước
                     if self.cfg["models"][0] != model:
                         self.cfg["models"] = [model] + [m for m in self.cfg["models"] if m != model]
+                    print(f"   ✓ model: {model}", flush=True)
                     if isinstance(resp.parsed, schema):
                         return resp.parsed.model_dump()
                     return schema.model_validate_json(resp.text).model_dump()
                 except errors.ClientError as e:
                     last_err = e
                     if e.code == 404:  # model không tồn tại -> thử model kế
+                        n_missing += 1
                         break
                     if e.code == 429:  # quá nhanh hoặc hết quota
-                        if attempt == 2:
-                            raise QuotaExhausted(str(e)) from e
-                        time.sleep(40 * (attempt + 1))
+                        if attempt == 1:  # vẫn 429 sau khi chờ -> model này hết quota, thử model kế
+                            n_quota += 1
+                            break
+                        time.sleep(40)
                         continue
                     raise
-                except errors.ServerError as e:  # 5xx tạm thời
+                except (errors.ServerError, httpx.TransportError) as e:  # 5xx / rớt kết nối tạm thời
                     last_err = e
                     time.sleep(20 * (attempt + 1))
+        # Mọi model dùng được đều hết quota -> dừng lượt chạy, để dành cho lần sau
+        if n_quota and n_quota + n_missing == len(self.cfg["models"]):
+            raise QuotaExhausted(str(last_err))
         raise last_err or RuntimeError("Không gọi được Gemini")
 
     def summarize_video(self, video: dict) -> dict:

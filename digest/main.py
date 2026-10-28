@@ -68,10 +68,11 @@ def collect_candidates(cfg, processed, cache, now) -> list[dict]:
             vid = v["video_id"]
             if vid in seen or not v["published"]:
                 continue
-            if now - youtube.parse_time(v["published"]) > lookback:
-                continue
             rec = processed.get(vid)
             if rec and (rec["status"] in ("done", "skipped") or rec.get("attempts", 0) >= max_attempts):
+                continue
+            # Video lỗi còn lượt thử thì vẫn thử lại dù đã quá lookback
+            if not rec and now - youtube.parse_time(v["published"]) > lookback:
                 continue
             seen.add(vid)
             out.append(v)
@@ -110,6 +111,7 @@ def main() -> int:
     failed_path = day_dir / "_failed.json"
     failed_final = load_json(failed_path, [])
     new_count = 0
+    not_done = []  # video lượt này chưa tóm tắt được
 
     for v in candidates:
         vid = v["video_id"]
@@ -122,12 +124,14 @@ def main() -> int:
             summary = summarizer.summarize_video(v)
         except QuotaExhausted:
             log("⛔ Hết quota Gemini hôm nay, phần còn lại để lần chạy sau.")
+            not_done += [{**c, "note": "hết quota"} for c in candidates[candidates.index(v):]]
             break
         except Exception as e:
             rec = processed.setdefault(vid, {"attempts": 0})
             rec.update(status="failed", attempts=rec.get("attempts", 0) + 1,
                        error=str(e)[:300], date=today)
             log(f"   ❗ lỗi (lần {rec['attempts']}): {str(e)[:200]}")
+            not_done.append({**v, "note": f"lần {rec['attempts']}/{cfg.get('max_attempts', 3)}"})
             if rec["attempts"] >= cfg.get("max_attempts", 3):
                 failed_final.append({k: v[k] for k in ("video_id", "title", "channel", "url")})
                 save_json(failed_path, failed_final)
@@ -166,6 +170,9 @@ def main() -> int:
         msgs = notify.build_messages(today, digest, records, failed, cfg.get("telegram_detail", "full"))
         notify.send(token, chat, msgs)
         log(f"📨 Đã gửi {len(msgs)} tin Telegram")
+    elif not new_count and not_done and token and chat and not args.no_telegram:
+        notify.send(token, chat, [notify.build_retry_notice(today, not_done)])
+        log("📨 Đã báo Telegram: chưa tóm tắt được video nào")
     elif not new_count:
         log("😴 Không có video mới, không gửi Telegram.")
     else:

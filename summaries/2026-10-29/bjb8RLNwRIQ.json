@@ -1,0 +1,42 @@
+{
+  "video_id": "bjb8RLNwRIQ",
+  "title": "Offline AI Programming: I Created a Subtitle Tool Without Writing a Single Line of Code",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-10-28T13:54:35.734147+00:00",
+  "url": "https://www.youtube.com/watch?v=bjb8RLNwRIQ",
+  "thumbnail": "https://i.ytimg.com/vi/bjb8RLNwRIQ/mqdefault.jpg",
+  "core": "Kết hợp LM Studio, OpenCode và LLM cục bộ (như Qwen 27B) giúp AI tự viết code, sửa lỗi hoàn toàn offline, bảo mật dữ liệu và không tốn phí duy trì.",
+  "sections": [
+    {
+      "heading": "Bộ công cụ cần thiết",
+      "timestamp": "00:36",
+      "points": [
+        "3 công cụ: LM Studio (chạy model server), Qwen 27B (~22GB) và OpenCode (agent tự động tạo file, chạy lệnh).",
+        "VGPU cần VRAM lớn (từ 24-32GB) để chứa trọng số mô hình cùng bộ nhớ ngữ cảnh mở rộng."
+      ]
+    },
+    {
+      "heading": "Cài đặt và cấu hình",
+      "timestamp": "01:49",
+      "points": [
+        "Bật Server trong LM Studio, cài OpenCode qua npm và trỏ file config tới endpoint cục bộ.",
+        "Phải tăng mức giới hạn `output` trong file config để tránh việc AI hết chỗ viết rồi báo dừng mã."
+      ]
+    },
+    {
+      "heading": "Hiệu năng và giới hạn",
+      "timestamp": "06:00",
+      "points": [
+        "Mất hơn 18 phút để AI tự tạo công cụ phụ đề bằng Whisper; xử lý video 26 phút mất dưới 2 phút.",
+        "Tốc độ chậm hơn AI đám mây, cần cách ly thư mục và người dùng bắt buộc phải rà soát lỗi sót lại."
+      ]
+    }
+  ],
+  "topics": [
+    "Local AI",
+    "OpenCode",
+    "Lập trình AI"
+  ],
+  "summarized_at": "2026-10-29T01:53:43.888637+00:00"
+}

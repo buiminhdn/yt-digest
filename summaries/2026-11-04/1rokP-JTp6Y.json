@@ -1,0 +1,42 @@
+{
+  "video_id": "1rokP-JTp6Y",
+  "title": "Claude Code + YouTube Người Que | Xây Kênh Triệu View 2027 | Claude Auto Edit Video",
+  "channel": "Nông Dân Học AI",
+  "channel_id": "UC7Oah4sE4VJ5oe1guO_KXfw",
+  "published": "2026-11-02T02:34:17.721944+00:00",
+  "url": "https://www.youtube.com/watch?v=1rokP-JTp6Y",
+  "thumbnail": "https://i.ytimg.com/vi/1rokP-JTp6Y/mqdefault.jpg",
+  "core": "Phương pháp tự động hóa tạo video hoạt hình người que triệu view kết hợp Claude Code, Remotion và ElevenLabs giúp tối ưu chi phí và tăng khả năng đề xuất trên YouTube.",
+  "sections": [
+    {
+      "heading": "Quy trình tạo video người que",
+      "timestamp": "00:00",
+      "points": [
+        "Kết hợp Claude, Remotion và ElevenLabs API để tự động hóa kịch bản, hình ảnh storyboard và hiệu ứng âm thanh.",
+        "Quy trình lập trình tự động đạt 80% chất lượng video gốc mà không tốn chi phí dùng các công cụ tạo ảnh AI."
+      ]
+    },
+    {
+      "heading": "Công cụ và chi phí vận hành",
+      "timestamp": "04:39",
+      "points": [
+        "Sử dụng gói Claude Max 5x khoảng 100 USD/tháng kết hợp Claude Code để điều khiển dự án tự động hóa.",
+        "Yếu tố then chốt giúp kênh phát triển là kịch bản chất lượng và giọng đọc có nét riêng."
+      ]
+    },
+    {
+      "heading": "Tối ưu hậu kỳ và kỹ thuật âm thanh",
+      "timestamp": "06:30",
+      "points": [
+        "Tích hợp các hiệu ứng VST, Compressor, Reverb và Soundcard chuẩn ASIO để xử lý âm thanh chuyên nghiệp.",
+        "YouTube ưu tiên đề xuất các video được dựng chi tiết nhiều lớp hơn là video tạo hoàn toàn bằng AI."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Code",
+    "Hoạt hình người que",
+    "Tự động hóa YouTube"
+  ],
+  "summarized_at": "2026-11-04T02:32:14.457236+00:00"
+}

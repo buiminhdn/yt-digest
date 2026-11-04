@@ -1,0 +1,50 @@
+{
+  "video_id": "rPIhAWbqD3A",
+  "title": "Goha Flow 2.0 | 4 AI Trong 1: Google Flow, Vids, Muse, Dola | Claude Code Tự Động Làm Video",
+  "channel": "Nông Dân Học AI",
+  "channel_id": "UC7Oah4sE4VJ5oe1guO_KXfw",
+  "published": "2026-11-03T11:34:17.721944+00:00",
+  "url": "https://www.youtube.com/watch?v=rPIhAWbqD3A",
+  "thumbnail": "https://i.ytimg.com/vi/rPIhAWbqD3A/mqdefault.jpg",
+  "core": "Phần mềm Goha Flow 2.0 tích hợp 4 công cụ (Google Flow, Vids, Muse, Dola) cùng Claude Code giúp tự động hóa toàn bộ quy trình làm video lịch sử với chi phí và nhân lực tối thiểu.",
+  "sections": [
+    {
+      "heading": "Giới thiệu Goha Flow 2.0",
+      "timestamp": "00:00",
+      "points": [
+        "Goha Flow 2.0 nâng cấp hỗ trợ Google Flow, Google Vids, Muse AI và Dola AI.",
+        "Mỗi tài khoản Pro và Ultra tạo được khoảng 1000 clip OmniFlash, đáp ứng nhu cầu sản xuất lớn."
+      ]
+    },
+    {
+      "heading": "Cài đặt Extension và Cookie",
+      "timestamp": "01:39",
+      "points": [
+        "Cài đặt extension Goha 2.0 bằng cách bật chế độ nhà phát triển trên Chrome.",
+        "Sử dụng extension Cookie Editor để dán cookie tài khoản Dola và Muse AI vào hệ thống."
+      ]
+    },
+    {
+      "heading": "Kết nối Claude Code tự động",
+      "timestamp": "06:03",
+      "points": [
+        "Cấp toàn quyền điều khiển trong Agent, tạo khóa và sao chép câu lệnh sang Claude Code.",
+        "Quy trình xây kênh chia thành nhiều pha, mỗi pha tạo script, prompt và gen ảnh, video tự động."
+      ]
+    },
+    {
+      "heading": "Chia sẻ Repo và Cộng đồng",
+      "timestamp": "13:59",
+      "points": [
+        "Tác giả chia sẻ kho lưu trữ GitHub chứa trọn bộ tài liệu, template cho cộng đồng.",
+        "Kênh YouTube chia sẻ lịch sử Việt Nam đạt kết quả tốt, thu hút lượt xem tự nhiên."
+      ]
+    }
+  ],
+  "topics": [
+    "Goha Flow",
+    "Claude Code",
+    "Tự động hóa video"
+  ],
+  "summarized_at": "2026-11-04T02:32:14.457236+00:00"
+}

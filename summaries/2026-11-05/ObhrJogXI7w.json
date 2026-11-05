@@ -1,0 +1,49 @@
+{
+  "video_id": "ObhrJogXI7w",
+  "title": "7 Skills Giúp Claude Thực Sự “Nguy Hiểm”",
+  "channel": "Nhat Anh AI",
+  "channel_id": "UCA_COBb6hjOWBYGRUBHwy6g",
+  "published": "2026-11-04T12:39:14.144476+00:00",
+  "url": "https://www.youtube.com/watch?v=ObhrJogXI7w",
+  "thumbnail": "https://i.ytimg.com/vi/ObhrJogXI7w/mqdefault.jpg",
+  "core": "Sử dụng 7 skill Claude Code giúp tự động hóa 80% công việc kinh doanh và lập trình mà không cần biết code.",
+  "sections": [
+    {
+      "heading": "Scroll Craft & Marketing",
+      "timestamp": "01:10",
+      "points": [
+        "Scroll Craft giúp Claude tạo website độc đáo với bố cục riêng biệt dựa trên yêu cầu sản phẩm.",
+        "Bộ marketing skills kết hợp Fal.ai giúp lên ý tưởng, kịch bản và tạo video quảng cáo bằng AI."
+      ]
+    },
+    {
+      "heading": "HyperFrames & Apify",
+      "timestamp": "18:11",
+      "points": [
+        "HyperFrames kết hợp Motion Studio giúp Claude tạo video motion graphics động cho quảng cáo.",
+        "Apify MCP Server cho phép Claude trích xuất dữ liệu từ Google Maps, TikTok chỉ trong vài phút."
+      ]
+    },
+    {
+      "heading": "Playwright & Last30Days",
+      "timestamp": "26:02",
+      "points": [
+        "Playwright cho phép Claude thao tác trực tiếp trên trình duyệt như một người dùng thực sự.",
+        "Last30Days tổng hợp ý kiến từ Reddit, X, YouTube giúp nghiên cứu cộng đồng trong 30 ngày qua."
+      ]
+    },
+    {
+      "heading": "Grill-me",
+      "timestamp": "35:34",
+      "points": [
+        "Grill-me đóng vai trò như chuyên gia tư vấn, đặt các câu hỏi sâu sắc để giải quyết vấn đề lớn."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Code",
+    "AI Automation",
+    "Workflow"
+  ],
+  "summarized_at": "2026-11-05T02:38:48.103834+00:00"
+}

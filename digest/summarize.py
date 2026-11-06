@@ -92,8 +92,12 @@ class GeminiSummarizer:
         self.cfg = cfg
 
     def _call(self, contents, schema, extra: dict | None = None):
-        import httpx
         from google.genai import errors, types
+
+        try:  # google-genai 3.x dùng httpx2 thay httpx
+            import httpx2 as httpx
+        except ImportError:
+            import httpx
 
         last_err, n_missing, n_quota = None, 0, 0
         for model in list(self.cfg["models"]):

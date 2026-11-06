@@ -66,5 +66,17 @@
   "ObhrJogXI7w": {
     "status": "done",
     "date": "2026-11-05"
+  },
+  "NOe2FmTkd6c": {
+    "attempts": 1,
+    "status": "failed",
+    "error": "No module named 'httpx'",
+    "date": "2026-11-06"
+  },
+  "-s5SUmP5MGo": {
+    "attempts": 1,
+    "status": "failed",
+    "error": "No module named 'httpx'",
+    "date": "2026-11-06"
   }
 }

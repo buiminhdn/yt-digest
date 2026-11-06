@@ -1,0 +1,34 @@
+{
+  "video_id": "NOe2FmTkd6c",
+  "title": "Why Detailed Prompts Make AI Sound Like a Robot (And How to Fix It with Claude)",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-11-05T11:48:37.032673+00:00",
+  "url": "https://www.youtube.com/watch?v=NOe2FmTkd6c",
+  "thumbnail": "https://i.ytimg.com/vi/NOe2FmTkd6c/mqdefault.jpg",
+  "core": "Càng mô tả quy tắc chi tiết, văn phong AI càng cứng nhắc; giải pháp tối ưu là cung cấp các bài mẫu tốt - dở thực tế để AI tự phân tích và học quy luật.",
+  "sections": [
+    {
+      "heading": "Học từ bài mẫu đối chiếu",
+      "timestamp": "01:15",
+      "points": [
+        "Đưa các mẫu thực tế và bắt AI gắn nhãn [THẤY TẬN MẮT], [SUY RA], [KHÔNG BIẾT] để lọc quy luật khách quan.",
+        "Cần gom tối thiểu 5 mẫu tốt và 5 mẫu dở để AI học điểm chung, tránh sao chép nguyên xi một mẫu."
+      ]
+    },
+    {
+      "heading": "Tối ưu Claude Skill",
+      "timestamp": "08:19",
+      "points": [
+        "Thêm 'disable-model-invocation: true' ở skill thủ công để không nạp thừa văn bản mô tả vào context.",
+        "Giữ file skill chính dưới 500 dòng; thao tác trực tiếp xong mới đóng gói quy trình."
+      ]
+    }
+  ],
+  "topics": [
+    "Prompt Engineering",
+    "Claude AI",
+    "Viết nội dung"
+  ],
+  "summarized_at": "2026-11-06T02:47:44.357144+00:00"
+}

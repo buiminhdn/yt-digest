@@ -1,0 +1,9 @@
+{
+  "highlights": [
+    "Sáng tạo đòi hỏi sự kết hợp giữa tư duy phân kỳ độc đáo và tư duy hội tụ mang tính ứng dụng thực tế.",
+    "Tách riêng phiên phát ý tưởng với sàng lọc logic, kết hợp thiền 10-20 phút giúp tăng hơn 65% dopamine kết nối.",
+    "Gom tối thiểu 5 mẫu tốt và 5 mẫu dở để AI tự phân tích quy luật, tránh văn phong cứng nhắc.",
+    "Thêm disable-model-invocation: true ở skill thủ công và duy trì file skill chính dưới 500 dòng nhằm tối ưu context."
+  ],
+  "themes": []
+}

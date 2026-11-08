@@ -1,0 +1,42 @@
+{
+  "video_id": "CI9lUqleyQs",
+  "title": "Làm ngách Phim Tài Liệu với model T1 mới",
+  "channel": "Hao Lam",
+  "channel_id": "UCeFIjNbm-4t9wa6VxfUHneA",
+  "published": "2026-11-07T14:10:19+00:00",
+  "url": "https://www.youtube.com/watch?v=CI9lUqleyQs",
+  "thumbnail": "https://i.ytimg.com/vi/CI9lUqleyQs/mqdefault.jpg",
+  "core": "Model video AI Topview T1 đạt chất lượng tiệm cận Seedance 2.5 nhưng chi phí rẻ hơn từ 33% đến 62%, tối ưu cho sản xuất video tài liệu bán tự động.",
+  "sections": [
+    {
+      "heading": "So sánh chi phí T1 và Seedance 2.5",
+      "timestamp": "00:07",
+      "points": [
+        "T1 tiêu tốn 1 credit/giây ($0,2/s), rẻ hơn 33% so với mức 1,5 credit/giây của Seedance 2.5 trên Topview.",
+        "So với giá Seedance 2.5 chính hãng ($0,5/s), T1 rẻ hơn khoảng 62%."
+      ]
+    },
+    {
+      "heading": "Chất lượng hình ảnh thực tế",
+      "timestamp": "04:57",
+      "points": [
+        "Thử nghiệm mù qua 3 cảnh cho thấy T1 tái tạo ánh sáng và bố cục tương đương Seedance 2.5.",
+        "Seedance 2.5 chỉ nhỉnh hơn nhẹ ở các chi tiết chuyển động vi mô như sợi tóc và độ mượt chuyển cảnh."
+      ]
+    },
+    {
+      "heading": "Quy trình dựng tự động bằng Claude",
+      "timestamp": "01:30",
+      "points": [
+        "Kết nối Claude Desktop qua plugin giúp tự động hóa 80-90% việc sinh prompt, tạo ảnh và xuất video trên canvas.",
+        "Chỉ cần 5 lệnh chat và tiêu hao 33% hạn mức Claude Opus để hoàn thiện một video tài liệu ngắn."
+      ]
+    }
+  ],
+  "topics": [
+    "AI Video",
+    "Topview T1",
+    "Làm phim AI"
+  ],
+  "summarized_at": "2026-11-08T01:40:33.822519+00:00"
+}

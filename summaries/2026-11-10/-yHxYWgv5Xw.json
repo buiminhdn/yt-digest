@@ -1,0 +1,58 @@
+{
+  "video_id": "-yHxYWgv5Xw",
+  "title": "How to Create Viral Stickman Videos with Claude | Free!",
+  "channel": "Hao Lam",
+  "channel_id": "UCeFIjNbm-4t9wa6VxfUHneA",
+  "published": "2026-11-09T05:15:50.506852+00:00",
+  "url": "https://www.youtube.com/watch?v=-yHxYWgv5Xw",
+  "thumbnail": "https://i.ytimg.com/vi/-yHxYWgv5Xw/mqdefault.jpg",
+  "core": "Quy trình tự động hóa tạo video animation Người Que bằng bộ Claude Skill kết hợp Google Flow và CapCut giúp tối ưu sản xuất video tự động từ khâu kịch bản đến dựng hoàn chỉnh.",
+  "sections": [
+    {
+      "heading": "Tổng quan giải pháp tự động",
+      "timestamp": "00:00",
+      "points": [
+        "Claude Skill tự động quản lý kịch bản, phân cảnh, cắt âm thanh và ghép video hoàn chỉnh trên CapCut.",
+        "Sử dụng Google Flow để tạo hình ảnh nhân vật đồng nhất hoàn toàn miễn phí thay vì tốn phí API."
+      ]
+    },
+    {
+      "heading": "Cấu hình môi trường làm việc",
+      "timestamp": "05:12",
+      "points": [
+        "Cài đặt Claude Code, tiện ích Claude trên Chrome, đăng nhập Google Flow và tắt tự động cập nhật CapCut.",
+        "Khuyên dùng giọng thu thật thay cho voice AI để tăng tính an toàn khi bật kiếm tiền."
+      ]
+    },
+    {
+      "heading": "Quy trình tạo video chi tiết",
+      "timestamp": "07:35",
+      "points": [
+        "Nạp file giọng đọc thô, Claude Skill tự động cắt tỉa các đoạn thừa và tối ưu thời lượng voice.",
+        "AI tự động lập storyboard chi tiết và gửi lệnh sinh ảnh nhân vật đồng bộ trên Google Flow."
+      ]
+    },
+    {
+      "heading": "Kết xuất dự án trên CapCut",
+      "timestamp": "14:37",
+      "points": [
+        "Dự án CapCut được tự động khởi tạo với đầy đủ hình ảnh, âm thanh và phụ đề khớp từng giây.",
+        "Mất khoảng 56 phút tổng thời gian xử lý cho một video 3,5 phút chứa 87 cảnh ảnh."
+      ]
+    },
+    {
+      "heading": "Đánh giá chi phí và tài nguyên",
+      "timestamp": "17:00",
+      "points": [
+        "Tiêu tốn khoảng 366.000 token Claude, tương đương 20% giới hạn 5 giờ của tài khoản Pro.",
+        "Tiết kiệm tối đa chi phí nhờ dùng cơ chế sinh ảnh trên giao diện web thay vì dùng API trả phí."
+      ]
+    }
+  ],
+  "topics": [
+    "Tự động hóa Video AI",
+    "Claude Skill",
+    "Sáng tạo nội dung YouTube"
+  ],
+  "summarized_at": "2026-11-10T04:14:31.611277+00:00"
+}

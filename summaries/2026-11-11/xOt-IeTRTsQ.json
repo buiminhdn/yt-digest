@@ -1,0 +1,61 @@
+{
+  "video_id": "xOt-IeTRTsQ",
+  "title": "Claude 2.0: Tất Cả Những Gì Bạn Cần Biết",
+  "channel": "Nhật Anh AI",
+  "channel_id": "UCA_COBb6hjOWBYGRUBHwy6g",
+  "published": "2026-11-10T13:12:02+00:00",
+  "url": "https://www.youtube.com/watch?v=xOt-IeTRTsQ",
+  "thumbnail": "https://i.ytimg.com/vi/xOt-IeTRTsQ/mqdefault.jpg",
+  "core": "Claude Code chuyển mình thành hệ thống tự động hóa đa nhiệm, cho phép chạy song song nhiều sub-session, tự duyệt web kiểm tra kết quả và điều khiển từ xa qua điện thoại.",
+  "sections": [
+    {
+      "heading": "Artifacts tương tác nâng cao",
+      "timestamp": "01:51",
+      "points": [
+        "Hỗ trợ xuất trực tiếp Docs, Slides, Design và xuất video minh họa Motion định dạng MP4.",
+        "Kích hoạt tính năng Artifacts sử dụng Claude bên trong để tạo công cụ tính toán, chấm điểm tự động."
+      ]
+    },
+    {
+      "heading": "Tối ưu giao diện và ngữ cảnh",
+      "timestamp": "07:07",
+      "points": [
+        "Lệnh /btw mở side chat hỏi nhanh không ảnh hưởng mạch chính; tính năng Fork để rẽ nhánh hội thoại.",
+        "Thanh Session rail hiển thị trực quan dung lượng context window và các thay đổi file.",
+        "Tự động tóm tắt hội thoại dài trên 200.000 tokens khi quay lại, giúp giảm hao phí token cache."
+      ]
+    },
+    {
+      "heading": "Đa nhiệm với Sub-session",
+      "timestamp": "09:00",
+      "points": [
+        "Tách tác vụ phức tạp thành nhiều sub-session chạy song song độc lập để tránh đầy context window.",
+        "Các sub-session có thể tự trao đổi, báo cáo kết quả về phiên chính và mở song song bằng Split view.",
+        "Lệnh /usage thống kê chi tiết lượng token và chi phí tiêu thụ trong 24 giờ."
+      ]
+    },
+    {
+      "heading": "Tự kiểm tra và vận hành từ xa",
+      "timestamp": "14:54",
+      "points": [
+        "Tự mở In-app Browser kiểm tra lỗi giao diện, test nút bấm và kích thước mobile trước khi hoàn tất.",
+        "Lệnh /goal buộc hệ thống chạy lặp liên tục cho đến khi thỏa mãn đúng tiêu chí kiểm tra.",
+        "Remote Control kết nối qua điện thoại để duyệt tác vụ; bật Cloud session để chạy ngầm trên máy chủ khi tắt máy."
+      ]
+    },
+    {
+      "heading": "Mở rộng giao diện bằng Mods",
+      "timestamp": "20:01",
+      "points": [
+        "Tạo mod tùy biến UI hoặc quy trình làm việc chỉ bằng cách mô tả prompt.",
+        "Dùng mod savvy-progress theo dõi tiến độ và chi phí agent; mod Collision Guard ngăn chặn xung đột ghi đè file."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Code",
+    "Tự động hóa AI",
+    "Lập trình AI"
+  ],
+  "summarized_at": "2026-11-11T02:03:18.501222+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "video_id": "iNfrWeqIs0Q",
+  "title": "Claude code + Youtube người que, Blender, đồ họa 3D đang mở ra nhiều ngách nội dung mới",
+  "channel": "Nông Dân Học AI",
+  "channel_id": "UC7Oah4sE4VJ5oe1guO_KXfw",
+  "published": "2026-11-11T14:14:45.723664+00:00",
+  "url": "https://www.youtube.com/watch?v=iNfrWeqIs0Q",
+  "thumbnail": "https://i.ytimg.com/vi/iNfrWeqIs0Q/mqdefault.jpg",
+  "core": "Sử dụng AI như Claude Code kết hợp Blender để làm video 3D/2.5D đang là xu hướng tăng trưởng nhanh trên YouTube. Để thành công và tránh bị tắt kiếm tiền do trùng lặp nội dung, creator cần linh hoạt kịch bản, làm chủ hạ tầng phần cứng và phối hợp đa mô hình AI phản biện chéo.",
+  "sections": [
+    {
+      "heading": "Xu hướng video 3D bằng AI",
+      "timestamp": "00:00",
+      "points": [
+        "Làm video 3D, bản đồ 2.5D mô phỏng địa hình bằng AI đang tăng trưởng mạnh toàn cầu, đạt hàng triệu view chỉ với dưới 20 video."
+      ]
+    },
+    {
+      "heading": "Tránh lỗi nội dung trùng lặp",
+      "timestamp": "01:51",
+      "points": [
+        "Sao chép rập khuôn prompt, cấu trúc kịch bản và văn phong từ kênh mẫu dễ bị YouTube quét lỗi trùng lặp và hủy kiếm tiền.",
+        "Nên linh hoạt độ dài video trong khoảng 15-30 phút, thay đổi thiết kế thumbnail và mở rộng chủ đề khi đạt 50k-100k view/48h."
+      ]
+    },
+    {
+      "heading": "Mẹo dùng Shorts kéo khán giả",
+      "timestamp": "05:37",
+      "points": [
+        "Cắt 3-5 clip Shorts từ mỗi video dài để thu hút tệp khán giả mục tiêu và kéo lượt truy cập từ trang chủ.",
+        "Hạn chế để Shorts bùng nổ view quá mức nhằm tránh thuật toán định vị kênh thành kênh Shorts, gây tụt đề xuất video dài."
+      ]
+    },
+    {
+      "heading": "Kỹ thuật dựng 3D và hạ tầng",
+      "timestamp": "09:05",
+      "points": [
+        "Sử dụng Claude Code điều khiển Blender giúp tạo hiệu ứng 3D/2.5D tự động mà không cần quá thạo kỹ thuật dựng phim.",
+        "Hệ thống cần tối thiểu 32GB RAM và GPU 8GB VRAM; có thể thuê VPS/Server GPU mạnh như RTX 4090/5090 để render nhanh các đoạn mồi thu hút."
+      ]
+    },
+    {
+      "heading": "Tối ưu hệ thống bằng đa AI",
+      "timestamp": "12:20",
+      "points": [
+        "Sử dụng công cụ chuyển đổi tài khoản tự động (Pitwall, AgentKit) để duy trì luồng làm việc liên tục trên Claude Pro/Ultra.",
+        "Cho các mô hình AI (Claude, Codex, Antigravity) phản biện chéo qua CLI giúp phát hiện điểm mù kiến thức và tăng độ chính xác lịch sử."
+      ]
+    }
+  ],
+  "topics": [
+    "YouTube AI",
+    "Blender 3D",
+    "Claude Code"
+  ],
+  "summarized_at": "2026-11-12T03:12:40.489697+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "video_id": "9EPkiTr-_lE",
+  "title": "Claude Fable 5.2: AI Model Mạnh Nhất Hiện Tại?",
+  "channel": "Nhật Anh AI",
+  "channel_id": "UCA_COBb6hjOWBYGRUBHwy6g",
+  "published": "2026-11-12T13:45:22.030479+00:00",
+  "url": "https://www.youtube.com/watch?v=9EPkiTr-_lE",
+  "thumbnail": "https://i.ytimg.com/vi/9EPkiTr-_lE/mqdefault.jpg",
+  "core": "Claude Fable 5.2 là model mạnh nhất của Anthropic, vượt 10-15% hiệu năng so với Opus 5.5 và bỏ xa GPT-6 Astra. Model có khả năng tự lên prompt, tự viết code, kiểm thử và hoàn thiện sản phẩm phức tạp chỉ với một câu lệnh duy nhất.",
+  "sections": [
+    {
+      "heading": "Hiệu năng benchmark",
+      "timestamp": "00:45",
+      "points": [
+        "Vượt Opus 5.5 từ 10-15% điểm tổng thể, đạt 69.9% ở bài test lập trình FrontierSWE (hơn 12%).",
+        "Khả năng điều khiển robot tăng vọt lên 64.9% (so với 39.4% của Opus 5.5).",
+        "Đạt điểm cao hơn GPT-6 Astra ở 10/10 bài kiểm tra và nhỉnh hơn Gemini 4 Carbon ở hầu hết tiêu chí."
+      ]
+    },
+    {
+      "heading": "Chi phí và tốc độ",
+      "timestamp": "03:36",
+      "points": [
+        "Giá API ở mức $8/triệu token vào và $40/triệu token ra, rẻ hơn 20% và nhanh hơn 30% so với Fable 5.1.",
+        "Chi phí đắt gấp đôi Opus 5.5 ($4 vào, $20 ra), gây hao hụt hạn mức token nhanh gấp 2 lần."
+      ]
+    },
+    {
+      "heading": "Năng lực tự vận hành thực tế",
+      "timestamp": "05:45",
+      "points": [
+        "Tự tạo prompt chi tiết, tự viết code, kiểm thử và sửa lỗi trọn gói từ một yêu cầu tổng quát duy nhất.",
+        "Xây dựng hoàn chỉnh mô phỏng 3D, game tương tác 60 FPS và motion graphics chạy mượt trên một file đơn lẻ."
+      ]
+    },
+    {
+      "heading": "Chiến lược phân bổ model",
+      "timestamp": "16:36",
+      "points": [
+        "Dùng Opus 5.5 làm model mặc định thường ngày; hạ xuống Sonnet/Haiku cho tác vụ nhẹ để tối ưu chi phí.",
+        "Dùng Fable 5.2 làm kiến trúc sư: lập kế hoạch dự án lớn, giao việc nhỏ cho model nhẹ hơn rồi tổng hợp nghiệm thu."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Fable 5.2",
+    "Anthropic",
+    "Mô hình AI"
+  ],
+  "summarized_at": "2026-11-13T02:44:55.877237+00:00"
+}

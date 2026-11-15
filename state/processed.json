@@ -140,10 +140,10 @@
     "date": "2026-11-12"
   },
   "jVlnSbUKrWc": {
-    "attempts": 2,
+    "attempts": 3,
     "status": "failed",
     "error": "1 validation error for VideoSummary\n  JSON input should be string, bytes or bytearray [type=json_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.14/v/json_type",
-    "date": "2026-11-14"
+    "date": "2026-11-15"
   },
   "iNfrWeqIs0Q": {
     "status": "done",
@@ -160,5 +160,21 @@
   "-Hed_6RT7TE": {
     "status": "done",
     "date": "2026-11-13"
+  },
+  "Fh9FaLJ-sNc": {
+    "status": "done",
+    "date": "2026-11-15"
+  },
+  "fnimHYRU4Ok": {
+    "status": "done",
+    "date": "2026-11-15"
+  },
+  "1jMs-65_YT4": {
+    "status": "done",
+    "date": "2026-11-15"
+  },
+  "QUcGX0Ah55Y": {
+    "status": "done",
+    "date": "2026-11-15"
   }
 }

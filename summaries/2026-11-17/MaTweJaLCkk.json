@@ -1,0 +1,49 @@
+{
+  "video_id": "MaTweJaLCkk",
+  "title": "Claude Code chạy 24/7 trên VPS, điều khiển qua điện thoại: Từ A - Z cho người mới - NO CODE",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-11-17T04:12:54+00:00",
+  "url": "https://www.youtube.com/watch?v=MaTweJaLCkk",
+  "thumbnail": "https://i.ytimg.com/vi/MaTweJaLCkk/mqdefault.jpg",
+  "core": "Hướng dẫn cài đặt Claude Code trên VPS Ubuntu kết hợp tmux để duy trì ứng dụng chạy 24/7 và điều khiển lập trình từ xa qua điện thoại bằng tính năng Remote Control.",
+  "sections": [
+    {
+      "heading": "Thiết lập VPS chạy Claude Code",
+      "timestamp": "01:21",
+      "points": [
+        "Thuê VPS gói KVM 2 (2 vCPU, 8GB RAM) tại trung tâm dữ liệu gần nhất như Malaysia và chọn mẫu hệ điều hành sẵn Claude Code."
+      ]
+    },
+    {
+      "heading": "Cấu hình tài khoản và tmux",
+      "timestamp": "04:04",
+      "points": [
+        "Tạo tài khoản phân quyền riêng `demo` không mật khẩu sudo để giới hạn rủi ro bảo mật cho AI.",
+        "Sử dụng công cụ `tmux` mở phiên chạy ngầm giúp Claude Code hoạt động liên tục 24/7 kể cả khi đóng cửa sổ dòng lệnh."
+      ]
+    },
+    {
+      "heading": "Điều khiển từ xa trên điện thoại",
+      "timestamp": "07:50",
+      "points": [
+        "Kích hoạt tính năng bằng lệnh `/remote-control` trên terminal để kết nối phiên làm việc với ứng dụng Claude trên di động.",
+        "Gửi yêu cầu tạo trang web hoặc ứng dụng ngay trên điện thoại, máy chủ tự động thực thi và trả kết quả qua cổng mạng."
+      ]
+    },
+    {
+      "heading": "So sánh VPS và an toàn dữ liệu",
+      "timestamp": "10:34",
+      "points": [
+        "VPS phù hợp cho dịch vụ web sống 24/7 và lưu trữ dữ liệu, còn các tác vụ định kỳ ngắn chỉ cần dùng Routine trên Cloud.",
+        "Không cấp quyền root hay công khai mật khẩu trên web công cộng, luôn cần con người phê duyệt trước khi gửi email hoặc dữ liệu ra ngoài."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Code",
+    "VPS Hostinger",
+    "Remote Control AI"
+  ],
+  "summarized_at": "2026-11-17T04:40:45.018841+00:00"
+}

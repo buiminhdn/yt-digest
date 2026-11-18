@@ -1,0 +1,65 @@
+{
+  "video_id": "J_ZcUy0-XXs",
+  "title": "Fable vs Opus vs Sonnet vs Haiku: Bạn Nên Sử Dụng Model Nào?",
+  "channel": "Nhật Anh AI",
+  "channel_id": "UCA_COBb6hjOWBYGRUBHwy6g",
+  "published": "2026-11-17T12:30:10+00:00",
+  "url": "https://www.youtube.com/watch?v=J_ZcUy0-XXs",
+  "thumbnail": "https://i.ytimg.com/vi/J_ZcUy0-XXs/mqdefault.jpg",
+  "core": "So sánh 4 model Claude (Haiku, Sonnet, Opus, Fable) qua 3 việc thực tế: slide, CRM, website. Không có model tốt nhất cho mọi việc; model đắt hơn không luôn vượt trội hoàn toàn về kết quả.",
+  "sections": [
+    {
+      "heading": "Giá và Benchmark",
+      "timestamp": "00:50",
+      "points": [
+        "Giá 1 triệu token đầu ra: Haiku 0.5$, Sonnet 10$, Opus 20$, Fable 40$.",
+        "Benchmark Humanity's Last Exam: Haiku 57.4%, Sonnet 64.5%, Opus 67.7%, Fable 74.2%."
+      ]
+    },
+    {
+      "heading": "Test 1: Làm Slide",
+      "timestamp": "05:55",
+      "points": [
+        "Haiku 0.31$, 4.5 phút, slide đơn giản nhưng lỗi chồng chéo text và tính sai nợ.",
+        "Sonnet 2.38$, 11 phút, layout đẹp, số liệu chuẩn nhưng nhầm biên lợi nhuận gộp vào ghi chú.",
+        "Opus 4.49$, 13.8 phút, slide chuẩn xác, visualization tốt nhất.",
+        "Fable 11.79$, 19 phút, đẹp, trực quan nhưng thiếu phần speaker notes."
+      ]
+    },
+    {
+      "heading": "Test 2: App CRM",
+      "timestamp": "11:38",
+      "points": [
+        "Haiku 0.73$, bỏ sót case trùng tên/số điện thoại, không xử lý lead rác.",
+        "Sonnet 4.17$, giao diện đẹp, lọc và pipeline tốt, vẫn sót case trùng nhỏ.",
+        "Opus 5.12$, giao diện gọn, báo contact trùng tốt, xử lý dữ liệu chuẩn.",
+        "Fable 15.92$, đắt gấp 3 Opus nhưng là model tốt nhất về giao diện và xử lý logic CRM."
+      ]
+    },
+    {
+      "heading": "Test 3: Website",
+      "timestamp": "20:25",
+      "points": [
+        "Haiku 1.56$, rẻ nhất, giao diện ổn, lỗi đếm số căn hộ trống.",
+        "Sonnet 6.31$, giao diện mượt, tính năng lọc tốt, có lỗi nhỏ về tính toán.",
+        "Opus 8.40$, giao diện chuẩn, text đè nhẹ, xử lý số liệu chính xác.",
+        "Fable 21.33$, đắt nhất, giao diện đẹp nhất, tính năng ngân hàng mượt mà."
+      ]
+    },
+    {
+      "heading": "Tổng kết & Nguyên tắc",
+      "timestamp": "28:40",
+      "points": [
+        "Fable tốt nhất nhưng đắt và chậm (gấp 3 thời gian Haiku).",
+        "Haiku rẻ và nhanh nhất nhưng dễ mắc lỗi.",
+        "Sonnet và Opus tối ưu tốt nhất về chi phí và hiệu quả."
+      ]
+    }
+  ],
+  "topics": [
+    "AI Models",
+    "Claude",
+    "So sánh AI"
+  ],
+  "summarized_at": "2026-11-18T03:46:34.709206+00:00"
+}

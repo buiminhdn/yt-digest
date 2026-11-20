@@ -216,5 +216,19 @@
   "lfGJz36gF8g": {
     "status": "done",
     "date": "2026-11-19"
+  },
+  "lzvjspBvRno": {
+    "status": "done",
+    "date": "2026-11-20"
+  },
+  "bavGfmCnpbk": {
+    "attempts": 1,
+    "status": "failed",
+    "error": "403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
+    "date": "2026-11-20"
+  },
+  "WKFtamV-YjQ": {
+    "status": "done",
+    "date": "2026-11-20"
   }
 }

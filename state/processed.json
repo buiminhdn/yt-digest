@@ -230,5 +230,23 @@
   "WKFtamV-YjQ": {
     "status": "done",
     "date": "2026-11-20"
+  },
+  "ksQeLkmdTPs": {
+    "attempts": 1,
+    "status": "failed",
+    "error": "403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}}",
+    "date": "2026-11-21"
+  },
+  "vt1nkaoPFws": {
+    "status": "done",
+    "date": "2026-11-21"
+  },
+  "FRCaFc41B2A": {
+    "status": "done",
+    "date": "2026-11-21"
+  },
+  "UHgRFh797ig": {
+    "status": "done",
+    "date": "2026-11-21"
   }
 }

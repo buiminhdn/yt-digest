@@ -1,0 +1,58 @@
+{
+  "video_id": "y276StD_tEU",
+  "title": "Tự Động Hoá 80% Công Việc Văn Phòng Với Claude (Artifacts)",
+  "channel": "Nhật Anh AI",
+  "channel_id": "UCA_COBb6hjOWBYGRUBHwy6g",
+  "published": "2026-11-23T12:58:46+00:00",
+  "url": "https://www.youtube.com/watch?v=y276StD_tEU",
+  "thumbnail": "https://i.ytimg.com/vi/y276StD_tEU/mqdefault.jpg",
+  "core": "Claude Artifacts cung cấp 6 môi trường làm việc trực quan giúp tự động hóa toàn bộ quy trình làm việc từ lập kế hoạch, soạn tài liệu, tính toán tài chính, thiết kế UI/UX đến phân tích dữ liệu chuyên nghiệp.",
+  "sections": [
+    {
+      "heading": "Lập kế hoạch trên Whiteboards",
+      "timestamp": "03:56",
+      "points": [
+        "Whiteboards cung cấp bảng trắng trực quan để xây dựng sơ đồ tư duy, ma trận 2x2, phễu chuyển đổi và dòng thời gian dự án.",
+        "Thông tin và bố cục trên Whiteboards làm bối cảnh đầu vào để Claude tiếp tục tạo tự động các tài liệu Docs, Sheets, Design và Slides."
+      ]
+    },
+    {
+      "heading": "Soạn thảo Docs và thiết kế Slides",
+      "timestamp": "15:01",
+      "points": [
+        "Docs hỗ trợ tài liệu đa tab, tích hợp bảng dữ liệu, danh sách kiểm tra, biểu tượng và xuất trực tiếp sang Word, PDF, Notion, Google Docs.",
+        "Slides tự động tạo bộ thẻ trình diễn kèm ghi chú cho người nói (Speaker Notes) và hỗ trợ xuất file PowerPoint hoặc Google Slides."
+      ]
+    },
+    {
+      "heading": "Mô hình tài chính trên Sheets",
+      "timestamp": "22:20",
+      "points": [
+        "Sheets tự dựng bảng tính chứa công thức liên kết thực tế giữa các tab, tự động cập nhật toàn bộ mô hình khi thay đổi biến số.",
+        "Cho phép khoanh vùng ô tính cụ thể để truy vấn Claude giải trình logic tính toán hoặc yêu cầu tự điều chỉnh số liệu theo tỷ lệ %."
+      ]
+    },
+    {
+      "heading": "Thiết kế UI và Prototype với Design",
+      "timestamp": "31:12",
+      "points": [
+        "Design tự động dựng giao diện Web/App đa màn hình dựa theo hệ thống nhận diện thương hiệu (Design System) riêng.",
+        "Tạo sẵn bản xem trước tương tác (prototype động) cho phép nhấp chuyển màn hình và xuất sản phẩm dưới dạng mã HTML hoặc hình ảnh PNG."
+      ]
+    },
+    {
+      "heading": "Phân tích dữ liệu với Data",
+      "timestamp": "46:56",
+      "points": [
+        "Data đọc trực tiếp file Excel/CSV hoặc cơ sở dữ liệu để tự dựng Dashboard báo cáo đa dạng dạng thẻ số, biểu đồ bong bóng, bản đồ nhiệt.",
+        "Phân tích chuyên sâu hành vi người dùng và hiệu quả nội dung từ dữ liệu thô mà không cần thao tác thiết lập thủ công."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Artifacts",
+    "Tự động hóa văn phòng",
+    "Trí tuệ nhân tạo AI"
+  ],
+  "summarized_at": "2026-11-24T06:13:14.571923+00:00"
+}

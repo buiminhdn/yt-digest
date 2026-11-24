@@ -1,0 +1,50 @@
+{
+  "video_id": "XSWSbHYcbcg",
+  "title": "Làm Phim AI Nhật Xưa Từ 1 File ZIP 26 Skill: Auto Trend Studio Soi TOP 20 + Goha Flow MUSE AI",
+  "channel": "Nông Dân Học AI",
+  "channel_id": "UC7Oah4sE4VJ5oe1guO_KXfw",
+  "published": "2026-11-23T10:19:26+00:00",
+  "url": "https://www.youtube.com/watch?v=XSWSbHYcbcg",
+  "thumbnail": "https://i.ytimg.com/vi/XSWSbHYcbcg/mqdefault.jpg",
+  "core": "Làm phim AI Nhật xưa chuyên nghiệp trên một PC nhờ bộ 3 công cụ: Auto Trend Studio, Bộ Kit 26 Skill và Goha Flow MUSE AI.",
+  "sections": [
+    {
+      "heading": "Auto Trend Studio",
+      "timestamp": "01:50",
+      "points": [
+        "Phần mềm trinh sát thị trường chạy 100% trên Windows, quét Google Trends 12 tháng.",
+        "Bảng TOP 20 làn tách kênh lớn lâu năm ra khỏi nhóm kênh trẻ dưới 400 ngày."
+      ]
+    },
+    {
+      "heading": "Bộ Kit 26 Skill",
+      "timestamp": "03:30",
+      "points": [
+        "Gồm 26 skill chuyên sâu, 44 công cụ Python tự động và Remotion V2.",
+        "Kiểm định chặn 3 trạm từ kịch bản, thoại tiếng Nhật đến khung hình anime."
+      ]
+    },
+    {
+      "heading": "Goha Flow MUSE AI",
+      "timestamp": "04:55",
+      "points": [
+        "Tạo hơn 100 cảnh phim chuyển động mượt mà bằng Muxi AI.",
+        "Cơ chế tự đo sức khỏe tài khoản, tự xoay vòng khi chạm hạn mức."
+      ]
+    },
+    {
+      "heading": "Thực hành file ZIP",
+      "timestamp": "06:25",
+      "points": [
+        "Giải nén file ZIP 4.88MB, chọn môi trường Local và gõ lệnh bắt đầu.",
+        "Dán khóa API vào tệp .env bằng Notepad ngay trên máy."
+      ]
+    }
+  ],
+  "topics": [
+    "AI Filmmaking",
+    "Auto Trend Studio",
+    "Goha Flow MUSE AI"
+  ],
+  "summarized_at": "2026-11-24T06:13:14.571923+00:00"
+}

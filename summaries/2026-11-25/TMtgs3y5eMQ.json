@@ -1,0 +1,58 @@
+{
+  "video_id": "TMtgs3y5eMQ",
+  "title": "Làm Phim Tài Liệu Hoạt Họa Mỹ Từ 1 File ZIP 22 Skill: Remotion 2.5D, Goha Key Vault & Swarm QC",
+  "channel": "Nông Dân Học AI",
+  "channel_id": "UC7Oah4sE4VJ5oe1guO_KXfw",
+  "published": "2026-11-24T14:08:54+00:00",
+  "url": "https://www.youtube.com/watch?v=TMtgs3y5eMQ",
+  "thumbnail": "https://i.ytimg.com/vi/TMtgs3y5eMQ/mqdefault.jpg",
+  "core": "Bộ Kit Goha v1.1.0 đóng gói quy trình 9 bước (B0-B8) giúp sản xuất phim hoạt họa 2.5D bằng Remotion, kết hợp AI phản biện và tự động kiểm lỗi để chinh phục ngách tài liệu thảm họa Mỹ.",
+  "sections": [
+    {
+      "heading": "Tiềm năng & Rủi ro ngách Mỹ",
+      "timestamp": "00:25",
+      "points": [
+        "Khán giả Mỹ 25-54 tuổi có RPM cao, nhu cầu tìm kiếm các sự kiện lịch sử bền vững quanh năm.",
+        "4 rủi ro lớn: nội dung AI lặp khuôn, sai lệch dữ liệu NWS/NOAA, vi phạm chính sách và render nặng."
+      ]
+    },
+    {
+      "heading": "Cấu trúc bộ Kit v1.1.0",
+      "timestamp": "02:24",
+      "points": [
+        "Gồm 479 tệp (23.77MB), 22 Skill và 209 script Python tự động hóa từ thu giọng đến xử lý âm thanh -14 LUFS.",
+        "Tích hợp Remotion Studio dựng animation bằng code chính xác từng khung hình và bảo mật Goha Key Vault."
+      ]
+    },
+    {
+      "heading": "Render & Kiểm định Swarm QC",
+      "timestamp": "04:15",
+      "points": [
+        "Hỗ trợ render 25.000+ khung hình tại máy nhà hoặc đóng gói 20-26MB đẩy lên GPU đám mây RunPod.",
+        "Hệ thống Swarm QC 2 vòng phản biện độc lập giúp phát hiện lỗi kỹ thuật và chống sửa lặp vòng."
+      ]
+    },
+    {
+      "heading": "3 bước cài đặt trên PC",
+      "timestamp": "05:00",
+      "points": [
+        "Giải nén tệp ZIP vào thư mục không dấu, nạp API key 1 lần vào Goha Key Vault.",
+        "Trỏ thư mục trên Claude Desktop hoặc Antigravity và gõ bắt đầu để kích hoạt trợ lý kiểm máy."
+      ]
+    },
+    {
+      "heading": "Tư duy & Hệ sinh thái Goha",
+      "timestamp": "06:29",
+      "points": [
+        "Thắng bằng chọn đúng đề, dữ liệu chuẩn xác và kiểm lỗi chặt chẽ trước khi đăng bài.",
+        "Hệ sinh thái 5 công cụ: Key Vault, Auto Trend Studio, Goha Flow, Goha AVS và Goha 3D Studio."
+      ]
+    }
+  ],
+  "topics": [
+    "Remotion 2.5D",
+    "Tạo video AI",
+    "Goha Kit"
+  ],
+  "summarized_at": "2026-11-25T04:57:59.873481+00:00"
+}

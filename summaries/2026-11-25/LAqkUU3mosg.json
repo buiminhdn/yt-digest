@@ -1,0 +1,49 @@
+{
+  "video_id": "LAqkUU3mosg",
+  "title": "Auto Trend Studio | Đo thử một ngách YouTube triệu view bằng dữ liệu thật",
+  "channel": "Nông Dân Học AI",
+  "channel_id": "UC7Oah4sE4VJ5oe1guO_KXfw",
+  "published": "2026-11-24T11:16:12+00:00",
+  "url": "https://www.youtube.com/watch?v=LAqkUU3mosg",
+  "thumbnail": "https://i.ytimg.com/vi/LAqkUU3mosg/mqdefault.jpg",
+  "core": "Auto Trend Studio v1.0 hỗ trợ đánh giá ngách YouTube trong 15 phút qua dữ liệu thực tế chạy offline, giúp chấm điểm sức khỏe ngách và dùng AI phản biện độc lập trước khi sản xuất video.",
+  "sections": [
+    {
+      "heading": "Cài đặt phần mềm",
+      "timestamp": "00:00",
+      "points": [
+        "Phần mềm chạy offline 100% trên Windows với Python 3.12, bộ cài nhẹ 1,4MB đến 2,9MB và xác thực an toàn qua mã SHA-256.",
+        "Mặc định tắt sẵn 7 công cụ mở rộng để đảm bảo bộ cài sạch hoàn toàn và không tốn tài nguyên máy."
+      ]
+    },
+    {
+      "heading": "Đánh giá sức khỏe ngách",
+      "timestamp": "01:50",
+      "points": [
+        "Trạm Radar chấm điểm ngách thang 0-100 từ 6 chỉ số và lọc cụm từ khóa đòn bẩy có hệ số Lift từ 1,45 lần trở lên.",
+        "Bảng Top 20 hỗ trợ lọc riêng các kênh trẻ dưới 400 ngày tuổi đang bứt tốc cùng điểm cảnh báo rủi ro chính sách."
+      ]
+    },
+    {
+      "heading": "Khai thác ý tưởng & AI phản biện",
+      "timestamp": "04:13",
+      "points": [
+        "Trạm 3 tự động gom nhóm bình luận, khoanh vùng điểm nóng thời gian và mổ cấu trúc mở đầu của video đối thủ.",
+        "Tính năng Goldfish Audit gửi dữ liệu sạch để AI phản biện mù theo 5 trục, tự động chặn nếu AI bịa mã video."
+      ]
+    },
+    {
+      "heading": "Quy trình 5 bước thực hành",
+      "timestamp": "06:30",
+      "points": [
+        "Quy trình 15 phút gồm: Kiểm tra Python -> Tạo dự án -> Quét ngách -> Chọn kênh mẫu sạch -> Chạy AI phản biện 0 đồng."
+      ]
+    }
+  ],
+  "topics": [
+    "Auto Trend Studio",
+    "Phân tích ngách YouTube",
+    "Nghiên cứu thị trường"
+  ],
+  "summarized_at": "2026-11-25T04:57:59.873481+00:00"
+}

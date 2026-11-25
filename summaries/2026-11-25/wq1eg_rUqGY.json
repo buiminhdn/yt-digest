@@ -1,0 +1,50 @@
+{
+  "video_id": "wq1eg_rUqGY",
+  "title": "Tất cả những gì bạn cần biết về vụ hack 6 tỷ đô Binance",
+  "channel": "Lóng",
+  "channel_id": "UCF-8rX3Rg44mnz5sPz3Mnlg",
+  "published": "2026-11-25T04:00:10+00:00",
+  "url": "https://www.youtube.com/watch?v=wq1eg_rUqGY",
+  "thumbnail": "https://i.ytimg.com/vi/wq1eg_rUqGY/mqdefault.jpg",
+  "core": "Binance bị rút 6,3 tỷ USD tài sản ví nóng do hacker chiếm quyền hệ thống ký giao dịch. Sàn cam kết tự chịu thiệt hại và đã bổ sung 98% tài sản bị ảnh hưởng, bên cạnh 3 tỷ USD stablecoin được các bên phát hành đóng băng kịp thời.",
+  "sections": [
+    {
+      "heading": "Diễn biến vụ tấn công",
+      "timestamp": "00:00",
+      "points": [
+        "Tháng 10/2026, khoảng 6,3 tỷ USD tài sản bị rút khỏi các ví nóng Binance trên nhiều blockchain.",
+        "Thiệt hại lớn nhất gồm 18.270 BTC (1,5 tỷ USD), 167.000 ETH và 1,6 tỷ USD USDT."
+      ]
+    },
+    {
+      "heading": "Thủ đoạn kỹ thuật",
+      "timestamp": "01:40",
+      "points": [
+        "Hacker xâm nhập máy tính kỹ sư DevOps từ tháng 6 để chiếm quyền kiểm soát hệ thống ký giao dịch.",
+        "Trên Ethereum, kẻ tấn công lạm dụng cơ chế ủy quyền EIP-7702 gửi 50 lệnh ủy quyền để rút tiền."
+      ]
+    },
+    {
+      "heading": "Khắc phục và bồi thường",
+      "timestamp": "03:30",
+      "points": [
+        "Tether và Circle đã đóng băng lần lượt 971 triệu USDT và 823 triệu USDC bị đánh cắp.",
+        "Binance tự chịu thiệt hại và đã hoàn trả 98% số tài sản bị ảnh hưởng tính đến 31/10."
+      ]
+    },
+    {
+      "heading": "Thủ phạm và bài học",
+      "timestamp": "04:55",
+      "points": [
+        "FBI quy trách nhiệm vụ tấn công cho nhóm TraderTraitor có liên quan đến Triều Tiên.",
+        "Người dùng nên chia nhỏ tài sản và không để toàn bộ tiền trên một sàn giao dịch duy nhất."
+      ]
+    }
+  ],
+  "topics": [
+    "Hacker Binance",
+    "An ninh Crypto",
+    "EIP-7702"
+  ],
+  "summarized_at": "2026-11-25T04:57:59.873481+00:00"
+}

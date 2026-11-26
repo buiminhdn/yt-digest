@@ -1,0 +1,63 @@
+{
+  "video_id": "etJJY7qvX-U",
+  "title": "Claude TOÀN TẬP 2027 cho người không biết code: 7 bậc dùng thật, từ dashboard tới bộ não thứ hai",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-11-26T03:27:57+00:00",
+  "url": "https://www.youtube.com/watch?v=etJJY7qvX-U",
+  "thumbnail": "https://i.ytimg.com/vi/etJJY7qvX-U/mqdefault.jpg",
+  "core": "Làm chủ Claude không cần biết code hay viết prompt dài, mà cần biến AI thành hệ thống vận hành qua việc dạy bằng bài mẫu thực tế, kiểm soát chi phí nỗ lực và kết nối một thư mục bộ não dùng chung.",
+  "sections": [
+    {
+      "heading": "Không gian làm việc và kiểm soát chi phí",
+      "timestamp": "04:10",
+      "points": [
+        "Thẻ Code cho phép chạy phiên lồng nhau và mở Side Chat (Ctrl + ;) xử lý việc phụ mà không làm loãng ngữ cảnh phiên chính.",
+        "Mức Effort điều chỉnh thời gian và mức độ tự quyết: mức Thấp cho việc nhanh/đơn giản, mức Cao cho đối chiếu số liệu và rà soát hợp đồng.",
+        "Giữ phiên chat còn ấm giúp giảm chi phí đọc lại token xuống 1/20 trên Opus 5.5, tránh để nguội khiến chi phí đội lên gấp 40 lần."
+      ]
+    },
+    {
+      "heading": "Dạy Claude bằng bài mẫu thực tế",
+      "timestamp": "25:39",
+      "points": [
+        "Đưa 3-6 mẫu kết quả tốt nhất và tệ nhất có số liệu đo lường để AI tự phân tích quy luật, thay vì mất công mô tả quy trình dài dòng.",
+        "Bắt buộc gắn nhãn 'Thấy tận mắt', 'Suy ra', 'Không biết' vào từng phát hiện nhằm triệt tiêu hoàn toàn lỗi AI tự bịa lý do.",
+        "Chỉ đóng gói thành Skill khi quy trình chạy trơn tru 5-7 lần không cần chỉnh sửa; gắn lệnh disable-model-invocation để tránh AI tự kích hoạt bừa bãi."
+      ]
+    },
+    {
+      "heading": "Gắn Mod bảo vệ dữ liệu và tối ưu phiên",
+      "timestamp": "34:24",
+      "points": [
+        "Tạo Mod chỉ bằng câu lệnh mô tả luật để AI tự động thực hiện 3 tác vụ: xem, sửa hoặc chặn tín hiệu.",
+        "Mod bảo mật tự động quét và chặn ngay lập tức tin nhắn chứa số điện thoại, tài khoản ngân hàng hoặc số căn cước trước khi gửi lên AI.",
+        "Dùng Mod Cache Clock đếm ngược giờ nguội phiên chat kèm lệnh /keep warm và lệnh /handoff để bàn giao ngữ cảnh gọn gàng khi chạm mốc 250.000 token."
+      ]
+    },
+    {
+      "heading": "Dựng Dashboard ra quyết định tự động",
+      "timestamp": "51:32",
+      "points": [
+        "Thiết kế Dashboard xoay quanh 1-3 quyết định cụ thể, tinh lọc từ 5-10 chỉ số then chốt thay vì nhồi nhét quá nhiều số liệu gây rối.",
+        "Kiểm chứng công thức tính toán và làm sạch file dữ liệu CSV trước khi yêu cầu AI tạo bố cục trực quan dưới dạng Artifact.",
+        "Sử dụng Scheduled Task đặt lịch chạy tự động vào khung giờ cố định mỗi sáng để AI tự làm mới số liệu và viết báo cáo phân tích."
+      ]
+    },
+    {
+      "heading": "Xây dựng bộ não thứ hai (Second Brain)",
+      "timestamp": "64:11",
+      "points": [
+        "Lưu trữ kiến thức trong một thư mục máy tính cục bộ kết hợp file bản đồ CLAUDE.md dưới 100 dòng để điều hướng AI đọc đúng vị trí.",
+        "Bộ não chỉ lưu nhận định, bối cảnh thực tế và bài học đúc kết sau các buổi họp, tuyệt đối không biến thành bãi chứa dữ liệu thô.",
+        "Áp dụng phân quyền dữ liệu 4 cấp (Nội bộ chung, Có kiểm soát, Hạn chế, Mật) và chỉ định duy nhất một người phụ trách duyệt cấu trúc định kỳ."
+      ]
+    }
+  ],
+  "topics": [
+    "Claude Code",
+    "Trí tuệ nhân tạo",
+    "Quản trị dữ liệu"
+  ],
+  "summarized_at": "2026-11-26T04:15:30.500427+00:00"
+}

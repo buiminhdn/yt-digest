@@ -1,0 +1,53 @@
+{
+  "video_id": "RDzv9LCO_MI",
+  "title": "Bạn đã là quản lý AI rồi. Chỉ là chưa ai trao chức",
+  "channel": "Thanh Trần - 5 Phút AI",
+  "channel_id": "UCTumIe5W_2OoKUEDAq3xsKQ",
+  "published": "2026-11-27T05:27:48+00:00",
+  "url": "https://www.youtube.com/watch?v=RDzv9LCO_MI",
+  "thumbnail": "https://i.ytimg.com/vi/RDzv9LCO_MI/mqdefault.jpg",
+  "core": "Khâu chậm nhất khi dùng AI hiện nay là người duyệt kết quả. Bạn cần chuyển từ giao việc sai vặt sang đóng vai trò quản lý nguyên mảng việc cho AI với quy trình kiểm soát rõ ràng.",
+  "sections": [
+    {
+      "heading": "Chuyển từ giao việc sang giao mảng",
+      "timestamp": "00:00",
+      "points": [
+        "AI hiện tại có thể hoạt động liên tục hàng giờ, cho phép giao quản lý cả mảng việc thay vì chỉ xử lý tác vụ đơn lẻ."
+      ]
+    },
+    {
+      "heading": "Tiêu chí chọn mảng việc cho AI",
+      "timestamp": "01:46",
+      "points": [
+        "Chỉ giao mảng việc diễn ra hoàn toàn trên máy tính và có thể kiểm tra kết quả đúng hoặc sai rõ ràng."
+      ]
+    },
+    {
+      "heading": "5 câu hỏi quản lý AI",
+      "timestamp": "04:15",
+      "points": [
+        "Xác định phạm vi giao, dữ liệu AI được đọc, điểm khởi chạy, điều cấm hứa thay chủ và nhân sự giám sát kèm người trực thay."
+      ]
+    },
+    {
+      "heading": "Nguyên tắc huấn luyện và lưu trữ",
+      "timestamp": "02:50",
+      "points": [
+        "Đặt ngưỡng chính xác (như 90%) mới cho AI tự vận hành, lưu lịch sử sửa vào file text nội bộ để AI học và tránh phụ thuộc công cụ."
+      ]
+    },
+    {
+      "heading": "Tạo giá trị thực cho doanh nghiệp",
+      "timestamp": "07:38",
+      "points": [
+        "Dùng AI xử lý tận gốc nguyên nhân lỗi hoặc mở rộng mảng việc tạo doanh thu mới thay vì chỉ tiết kiệm vài giờ lặt vặt."
+      ]
+    }
+  ],
+  "topics": [
+    "Quản lý AI",
+    "Ứng dụng AI",
+    "Tối ưu quy trình"
+  ],
+  "summarized_at": "2026-11-28T04:03:48.857864+00:00"
+}
